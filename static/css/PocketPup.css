@@ -1,0 +1,9 @@
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+h1 {
+	text-align:center;
+	color:gray;
+	font: normal 69pt "Arial Black";
+}
