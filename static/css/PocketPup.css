@@ -1,37 +1,42 @@
-
-
-.title {
-	text-align:center;
-	color:gray;
-	font: normal 420pt;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    width: 100%;
 }
 
 .topbar {
 	position: fixed;
-	top: 0;
-	height:40px;
+	height: 10%;
 }
 
 #voteButton {
 	position: fixed;
-	left: 0;
-	border: 30px;
+	left: 3pt;
 }
 
 #storeButton {
 	position: fixed;
-	right: 0;
+	right: 3pt;
 }
 
 .doghome {
-	position: fixed;
-	top: 50;
-	left: 50;
+	position: absolute;
+	top: 20pt;
 }
 
 .bottombar {
 	position: fixed;
 	bottom: 0;
-	left: 0;
+	height: 10%;
 }
 
+li {
+    float: left;
+    padding: 8pt;
+}
+
+a.bottombar {
+    display: block;
+}
