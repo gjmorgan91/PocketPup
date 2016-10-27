@@ -16,12 +16,19 @@
 	top: 0;
 }
 
+<<<<<<< HEAD
 .pageTitle {
 	text-align: center;
 	font-size: 2em;
 	color:white;
 	display:inline;
 }
+=======
+.pageBody {
+    
+}
+
+>>>>>>> 8cb03c83b54d8632b2fc3cfcdf36b3089836fdc9
 #voteButton {
 	position: fixed;
 	left: 0;
