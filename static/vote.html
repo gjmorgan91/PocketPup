@@ -4,33 +4,47 @@
 
 <head>
 	<title>Vote</title>
-	<meta charset="utf-8">
+	<link href="css/PocketPup.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- WHAT DOES THE SCALE DO!! -->
+	<!--Names the page, links the CSS files, and sets the viewport size -->
 </head>
 
 <body>
-	<a class="btn" href="store.html">Store</a>
+<ul class="topbar">
+	<li><a href="store.html" id="storeButton">Store</a></li>
+
+	<div class="doghome">
+		<a href="profile.html">Profile</a>
+	</div>
+</ul>
+<ul class="pageBody">
 	<h3>'Owner and Pet Name'</h3>
 	<h2>'Training Topic'</h2>
+	
 	<div>
-		<img src="images/vote/vote_placeholder.jpg" height="300" weidth="300">
+		<img id="pupPic" src="images/vote/vote_placeholder.jpg" height="300" weidth="300">
 	</div>
+	
 	<div>
 		<p class="button" id="like">ThumbsUp</p>
 	</div>
+	
 	<div>
-		<a class="btn" href="home.html">Home</a>
-		<a class="btn" href="locations.html">Locations</a>
-		<a class="btn" href="training.html">Training</a>
-		<a class="btn" href="profile.html">Profile</a>
-		<a class="btn" href="activity.html">Activity</a>
+		<ul class="bottombar">
+  		<li><a href="index.html">Home</a></li>
+  		<li><a href="locations.html">News</a></li>
+  		<li><a href="training.html">Contact</a></li>
+  		<li><a href="activity.html">About</a></li>
 	</div>
+</ul>
 
 	<script src="https://code.jquery/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/pocketpup.js"></script>
+</ul>
 </body>
 
 </html>
