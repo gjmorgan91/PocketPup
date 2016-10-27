@@ -1,10 +1,11 @@
 .bar {
 	position: fixed;
 	height: 8%;
+	min-height: 2em;
 	border-color: black;
 	width: 100%;
     text-align: center;
-    background-color: pink;
+    background-color: royalblue;
     overflow: auto;
 }
 
@@ -15,10 +16,17 @@
 	top: 0;
 }
 
+.pageTitle {
+	text-align: center;
+	font-size: 2em;
+	color:white;
+	display:inline;
+}
 #voteButton {
 	position: fixed;
 	left: 0;
     width: 10%;
+    height: 8%;
     padding-top: 5px;
     padding-bottom:5px;
     transition: all 0.3s ease;
@@ -30,6 +38,7 @@
 	position: fixed;
 	right: 0;
     width: 10%;
+    height: 8%;
     padding-top: 5px;
     padding-bottom:5px;
     transition: all 0.3s ease;
@@ -56,9 +65,17 @@
 }
 
 .bar a:hover {
-    background-color: grey;
+    background-color: lightskyblue;
 }
 
 .active {
-    background-color: grey;
+    background-color: dodgerblue;
+    height:100%;
+}
+
+.background {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	height:84%;
+	float: top;
 }
