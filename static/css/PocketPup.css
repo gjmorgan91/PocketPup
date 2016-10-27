@@ -1,14 +1,17 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.bar {
+	position: fixed;
+	height: 8%;
+	border-color: grey;
+	width: 100%;
+    text-align: center;
     background-color: pink;
-    width: 100%;
+    overflow: auto;
 }
 
-.topbar {
-	position: fixed;
-	height: 10%;
+.top {
+	border-bottom: 1pt;
+	border-bottom-style: inset;
+	top: 0;
 }
 
 #voteButton {
@@ -21,22 +24,28 @@ ul {
 	right: 3pt;
 }
 
-.doghome {
-	position: absolute;
-	top: 20pt;
-}
 
-.bottombar {
-	position: fixed;
+
+.bottom {
+	border-top: 1pt;
+	border-top-style: inset;
 	bottom: 0;
-	height: 10%;
 }
 
-li {
+.bar a {
+    width: 25%;
+    padding-top: 5px;
+    padding-bottom:12px;
     float: left;
-    padding: 8pt;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 1.5em;
 }
 
-a.bottombar {
-    display: block;
+.bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: black;
 }
