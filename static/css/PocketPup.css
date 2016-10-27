@@ -1,8 +1,8 @@
 .bar {
 	position: fixed;
 	height: 8%;
-	min-height: 2em;
-	border-color: black;
+	min-height: 35pt;
+	border-color: grey;
 	width: 100%;
     text-align: center;
     background-color: royalblue;
@@ -18,9 +18,11 @@
 
 .pageTitle {
 	text-align: center;
-	font-size: 2em;
+	font-size: 24pt;
 	color:white;
 	display:inline;
+    padding-top: 8pt;
+    padding-bottom: 8pt
 }
 
 #voteButton {
@@ -28,11 +30,11 @@
 	left: 0;
     width: 10%;
     height: 8%;
-    padding-top: 5px;
-    padding-bottom:5px;
     transition: all 0.3s ease;
     color: white;
-    font-size: 1.5em;
+    font-size: 16pt;
+    padding-top: 8pt;
+    padding-bottom: 8pt
 }
 
 #storeButton {
@@ -40,11 +42,11 @@
 	right: 0;
     width: 10%;
     height: 8%;
-    padding-top: 5px;
-    padding-bottom:5px;
+    padding-top: 8pt;
+    padding-bottom:5pt;
     transition: all 0.3s ease;
     color: white;
-    font-size: 1.5em;
+    font-size: 16pt;
 }
 
 .bottom {
@@ -55,21 +57,32 @@
 
 .bar.bottom a {
     width: 25%;
-    padding-top: 5px;
-    padding-bottom:12px;
+    padding-top: 2pt;
+    padding-bottom:2pt;
     float: left;
     transition: all 0.3s ease;
     color: white;
-    font-size: 1.5em;
+    font-size: 24pt;
 }
 
 .bar a:hover {
     background-color: lightskyblue;
 }
 
-.active {
+.active.top {
     background-color: dodgerblue;
     height:100%;
+    border-bottom: 1pt;
+    border-color: none;
+    border-bottom-style: inset;
+}
+
+.active.bottom {
+    background-color: dodgerblue;
+    height:100%;
+    border-top: 1pt;
+    border-color: none;
+    border-top-style: inset;
 }
 
 .background {
