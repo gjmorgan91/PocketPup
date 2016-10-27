@@ -49,6 +49,16 @@
     font-size: 16pt;
 }
 
+.dog {
+    font-size: 50pt;
+    color: brown;
+    float: left;
+    transition:all 0.3s ease;
+    position: absolute;
+    top: 350pt;
+    left: 150pt;
+}
+
 .bottom {
 	border-top: 1pt;
 	border-top-style: inset;
