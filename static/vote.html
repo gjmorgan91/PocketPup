@@ -7,19 +7,21 @@
 	<link href="css/PocketPup.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--Names the page, links the CSS files, and sets the viewport size -->
 </head>
 
 <body>
-<ul class="topbar">
-	<li><a href="store.html" id="storeButton">Store</a></li>
+		<div class="bar top">
+			<a class="active" href="vote.html" id="voteButton"><i class="fa fa-group"></i></a>
+			<a href="store.html" id="storeButton"><i class="fa fa-credit-card-alt"></i></a>
 
-	<div class="doghome">
-		<a href="profile.html">Profile</a>
-	</div>
-</ul>
-<ul class="pageBody">
+			<div class="doghome">
+				<a href="profile.html">Profile</a>
+			</div>
+		</div>
+		
 	<h3>'Owner and Pet Name'</h3>
 	<h2>'Training Topic'</h2>
 	
@@ -31,14 +33,12 @@
 		<p class="button" id="like">ThumbsUp</p>
 	</div>
 	
-	<div>
-		<ul class="bottombar">
-  		<li><a href="index.html">Home</a></li>
-  		<li><a href="locations.html">News</a></li>
-  		<li><a href="training.html">Contact</a></li>
-  		<li><a href="activity.html">About</a></li>
+	<div class="bar bottom">
+  		<a href="index.html"><i class="fa fa-home"></i></a> 
+  		<a href="locations.html"><i class="fa fa-map-marker"></i></a> 
+  		<a href="training.html"><i class="fa fa-paw"></i></a> 
+  		<a href="activity.html"><i class="fa fa-book"></i></a>
 	</div>
-</ul>
 
 	<script src="https://code.jquery/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
