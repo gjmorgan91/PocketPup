@@ -100,13 +100,6 @@ body.home{
     border-top-style: inset;
 }
 
-.background {
-	padding-top: 2em;
-	padding-bottom: 2em;
-	height:84%;
-	float: top;
-}
-
 #owner {
     display: inline;
     text-align: left;
