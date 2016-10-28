@@ -100,6 +100,17 @@ body.home{
     border-top-style: inset;
 }
 
+/*VOTE PAGE CODE BELOW*/  
+
+.voteInfo {
+    margin-top: 13%;
+}
+
+.button {
+    display: inline;
+    margin: 4%;
+}
+
 #owner {
     display: inline;
     text-align: left;
@@ -115,6 +126,10 @@ body.home{
 }
 
 #pupPic {
-    height: 75%;
-    width: 75%;
+    display: block;
+    margin: auto;
+    border: 10px solid;
+    border-color: pink;
+    width: 80%;
+    height: 80%;
 }
