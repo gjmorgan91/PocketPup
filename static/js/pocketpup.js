@@ -6,8 +6,9 @@ $(document).read(function() {
 
 function intializePage() {
 	
-	$("#like").click(changeText);
+	$('#like').click(changeText);
 	function changeText(event) {
+		console.log("in changeText");s
 		$(this).text("Thumbs Down");
 	}
 
