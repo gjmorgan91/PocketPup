@@ -30,15 +30,6 @@ body.home{
     padding-bottom: 8pt
 }
 
-.pageTitle.login {
-	text-align: center;
-	font-size: 24pt;
-	color: #737373;
-	display:inline;
-    padding-top: 8pt;
-    padding-bottom: 8pt
-}
-
 #voteButton {
 	position: fixed;
 	left: 0;
