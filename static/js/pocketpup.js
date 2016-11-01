@@ -1,14 +1,14 @@
 'use strict';
 
-$(document).read(function() {
+$(document).ready(function() {
 	intializePage();
-})
+});
 
 function intializePage() {
 	
 	$('#like').click(changeText);
 	function changeText(event) {
-		console.log("in changeText");s
+		console.log("in changeText");
 		$(this).text("Thumbs Down");
 	}
 
