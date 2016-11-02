@@ -132,9 +132,11 @@ display: none;
     width: 100%;
 }
 
-.button {
+.voteButton {
     display: inline;
-    margin: 4%;
+    width: 100%;
+    padding-left: 45pt;
+    font-size: 30pt;
 }
 
 #owner {
@@ -152,7 +154,7 @@ display: none;
     display: block;
     margin: auto;
     border: 10px solid;
-    border-color: pink;
+    border-color: #b8c492;
     width: 80%;
     height: 80%;
 }
@@ -177,4 +179,18 @@ display: none;
     width: 100%;
     z-index; -1;
     font-size: 150pt;
+}
+
+.voteText {
+    display: block;
+    width:370px;
+    height:100px;
+    background-color: grey;
+    color:White;
+    margin:0 auto;
+}
+
+.voteSubmit {
+    background-color: grey;
+    padding-bottom: 50pt;
 }

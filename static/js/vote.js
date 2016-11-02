@@ -8,6 +8,7 @@ function intializePage() {
 	
 	$('#thumbsDown').hide();
 	$('#thumbsUp').hide();
+	$('.voteText').hide();
 
 	$('#up').click(UpVote);
 	function UpVote(event) {
@@ -23,6 +24,12 @@ function intializePage() {
 		$('#thumbsDown').fadeIn("fast");
 		$('#thumbsDown').fadeOut("fast");
 		$('#thumbsDown').hide();
+	}
+
+	$('#comment').click(showComment);
+	function showComment(event) {
+		$('.voteText').show();
+		window.scrollTo(0,5000);
 	}
 
 }
