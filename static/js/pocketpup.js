@@ -12,4 +12,7 @@ function intializePage() {
 		$(this).text("Thumbs Down");
 	}
 
+	$('#outside').onClick = function pictureChange(event) {
+	(document).getElementById("background").src="images/bg2.png";
+	}
 }

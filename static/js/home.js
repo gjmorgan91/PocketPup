@@ -1,15 +1,15 @@
-'use strict';
+function BGChange() {
 
-$(document).ready(function() {
-	intializePage();
-});
+    document.getElementById("background").src = 'images/bg2.png';
+    $('#currDog').offset({top: 300, left: 200});
+    $('#outside').hide();
+    $('#inside').removeClass("hidden");
+}
 
-function intializePage() {
-	
-	$('#like').click(changeText);
-	function changeText(event) {
-		console.log("in changeText");
-		$(this).text("Thumbs Down");
-	}
+function BGChangeBack() {
 
+    document.getElementById("background").src = 'images/bg1.png';
+    $('#currDog').offset({top: 300, left: 100});
+    $('#outside').show();
+    $('#inside').addClass("hidden");
 }

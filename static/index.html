@@ -10,6 +10,7 @@
 <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 <script src="js/jquery.js"></script>
+<script src="js/home.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -19,15 +20,16 @@
 <body>
 
 <div class="bar top">
-<a href="vote.html" id="voteButton"><i class="fa fa-group"></i></a>
-<p class="pageTitle">PocketPup</p>
-<a href="store.html" id="storeButton"><i class="fa fa-credit-card"></i></a>
+	<a href="vote.html" id="voteButton"><i class="fa fa-group"></i></a>
+	<p class="pageTitle">PocketPup</p>
+	<a href="store.html" id="storeButton"><i class="fa fa-credit-card"></i></a>
 </div>
 
 <div>
-<img id="background" src="images/bg1.png"></img>
-<a href="profile.html" class="dog"><img src="images/dogs/swarley.png"></i></a>
-<p class="btn" id="outside">Go outside >></p>
+	<img id="background" src="images/bg1.png"></img>
+	<a href="profile.html" class="dog" id="currDog"><img src="images/dogs/swarley.png"></i></a>
+	<p class="btn" id="outside" onClick="BGChange()">Go outside >></p>
+	<p class="btn hidden" id="inside" onClick="BGChangeBack()"><< Go inside</p>
 </div>
 
 
