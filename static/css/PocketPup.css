@@ -194,3 +194,7 @@ display: none;
     background-color: grey;
     padding-bottom: 50pt;
 }
+
+.buffer {
+    height: 50pt;
+}
