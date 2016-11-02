@@ -8,14 +8,14 @@ function intializePage() {
 	
 	$('#up').click(UpVote);
 	function UpVote(event) {
-		console.log("in changeText");
-		$(this).text("Yo Go Girl");
+		console.log("Vote it Up");
+		$(#thumbsUp).text("Yo Go Girl");
 	}
 
 	$('#down').click(DownVote);
 	function DownVote(event) {
-		console.log("in changeText");
-		$(this).text("Hell Naw");
+		console.log("Vote it Down");
+		$(#thumbsDown).fadeIn("slow",fadeOut("fast",null));
 	}
 
 }
