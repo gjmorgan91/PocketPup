@@ -6,16 +6,23 @@ $(document).ready(function() {
 
 function intializePage() {
 	
+	$('#thumbsDown').hide();
+	$('#thumbsUp').hide();
+
 	$('#up').click(UpVote);
 	function UpVote(event) {
 		console.log("Vote it Up");
-		$(#thumbsUp).text("Yo Go Girl");
+		$('#thumbsUp').fadeIn("fast");
+		$('#thumbsUp').fadeOut('fast');
+		$('#thumbsUp').hide();
 	}
 
 	$('#down').click(DownVote);
 	function DownVote(event) {
 		console.log("Vote it Down");
-		$(#thumbsDown).fadeIn("slow",fadeOut("fast",null));
+		$('#thumbsDown').fadeIn("fast");
+		$('#thumbsDown').fadeOut("fast");
+		$('#thumbsDown').hide();
 	}
 
 }

@@ -156,3 +156,25 @@ display: none;
     width: 80%;
     height: 80%;
 }
+
+#thumbsUp {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    color: white;
+    top: 180px;
+    width: 100%;
+    z-index; -1;
+    font-size: 150pt;
+}
+
+#thumbsDown {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    color: white;
+    top: 180px;
+    width: 100%;
+    z-index; -1;
+    font-size: 150pt;
+}
