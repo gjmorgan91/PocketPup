@@ -127,7 +127,9 @@ display: none;
 /*Vote page*/  
 
 .voteInfo {
-    margin-top: 13%;
+    padding-top: 36pt;
+    text-align: center;
+    width: 100%;
 }
 
 .button {
@@ -136,13 +138,10 @@ display: none;
 }
 
 #owner {
-    display: inline;
-    text-align: left;
-}
+    display: inline;}
 
 #pet {
     display: inline;
-    text-align: right;
 }
 
 #topic {
