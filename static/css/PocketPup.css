@@ -8,6 +8,7 @@
     text-align: center;
     background-color: #bebebe;
     overflow: auto;
+    z-index: 2;
 }
 
 
@@ -89,23 +90,29 @@
 
 
 /* Home Screen */
-body.home{
-    background-image: url("../images/bg1.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: fixed;
+
+#background {
+	position: absolute;
+	padding-top: 35pt;
+	height: 92%;
+	width: 100%;
+	z-index: -3;
 }
 
 .dog {
-    float: left;
-    transition:all 0.3s ease;
     position: absolute;
-    top: 350pt;
-    left: 150pt;
+    top: 300px;
+    left: 100px;
     width: 140px;
-    height: 300px;
 }
 
+.btn#outside {
+	position: absolute;
+	bottom: 40pt;
+	right: 0pt;
+	color: white;
+	text-shadow: 1pt 1pt 5pt #000;
+}
 /*Vote page*/  
 
 .voteInfo {
