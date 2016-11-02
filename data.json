@@ -1,32 +1,27 @@
 {
-	"dogs": [
-		{
-			"dogName": "Swarley",
-			"ownName": "Gregory Morgan"
-			"breed": "Golden Retriever",
-			"age": "2 years"
-			"avatar": "static/images/dogs/swarley.png"			
-		},
-		{
-			"dogName": "Korra",
-			"ownName": "Jacob Aguirre"
-			"breed": "Poodle",
-			"age": "3 years"
-			"avatar": "static/images/dogs/poodle.png"			
-		},
-		{
-			"dogName": "Goji",
-			"ownName": "Brendon Taing"
-			"breed": "Husky",
-			"age": "1 years"
-			"avatar": "static/images/dogs/husky.png"			
-		},
-		{
-			"dogName": "Marina",
-			"ownName": "Tricia"
-			"breed": "Golden Retriever",
-			"age": "2 years"
-			"avatar": "static/images/dogs/swarley.png"			
-		},
-	]
+	"profiles": [{
+		"dogName": "Swarley",
+		"ownName": "Gregory Morgan",
+		"breed": "Golden Retriever",
+		"age": "2 years",
+		"avatar": "static/images/dogs/swarley.png"
+	}, {
+		"dogName": "Korra",
+		"ownName": "Jacob Aguirre",
+		"breed": "Poodle",
+		"age": "3 years",
+		"avatar": "static/images/dogs/poodle.png"
+	}, {
+		"dogName": "Goji",
+		"ownName": "Brendon Taing",
+		"breed": "Husky",
+		"age": "1 years",
+		"avatar": "static/images/dogs/husky.png"
+	}, {
+		"dogName": "Marina",
+		"ownName": "Tricia",
+		"breed": "Jack terrier",
+		"age": "5 years",
+		"avatar": "static/images/dogs/terrier.png"
+	}]
 }
