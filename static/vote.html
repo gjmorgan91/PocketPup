@@ -2,53 +2,51 @@
 
 <html>
 
-<head>
-	<title>Vote</title>
-	<link href="css/PocketPup.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="js/jquery.js"></script>
+	<head>
+		<title>Vote</title>
 
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap.js"></script> 
-	<!--Names the page, links the CSS files, and sets the viewport size -->
-</head>
+		<link href="css/PocketPup.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
-<body>
-		<div class="bar top">
-			<a class="active top" href="vote.html" id="voteButton"><i class="fa fa-group"></i></a>
-			<p class="pageTitle">PocketPup</p>
-			<a href="store.html" id="storeButton"><i class="fa fa-credit-card-alt"></i></a>
+		<script src="js/jquery.js"></script>
+		<script src="js/vote.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.js"></script> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Names the page, links the CSS files, and sets the viewport size -->
+	</head>
+
+	<body>
+			<div class="bar top">
+				<a class="active top" href="vote.html" id="voteButton"><i class="fa fa-group"></i></a>
+				<p class="pageTitle">Vote</p>
+				<a href="store.html" id="storeButton"><i class="fa fa-credit-card-alt"></i></a>
+			</div>
+
+		<div class="voteInfo">
+			<h3 id="owner">Gregory Morgan's</h3>
+			<h3 id="pet">Swarley</h3>
+			<h2 id="topic">Shitting</h2>
 		</div>
 
-	<div class="voteInfo" id="topInfo">
-		<h3 id="owner">'Owner Name'</h3>
-		<h3 id="pet">'Pet Name'</h3>
-		<h2 id="topic">'Training Topic'</h2>
-	</div>
-
-	<div>
-		<img id="pupPic" src="images/vote/vote_placeholder.JPG" height="300" weidth="300">
-	</div>
-	
-	<div>
-		<p class="btn" id="up">ThumbsUp</p>
-		<p class="btn" id="down">ThumbsDown</p>
-		<p class="btn" id="comment">Comment</p>
-		<p class="btn" id="report">Report</p> 
-	</div>
-	
-	<div class="bar bottom">
-  		<a href="index.html"><i class="fa fa-home"></i></a> 
-  		<a href="locations.html"><i class="fa fa-map-marker"></i></a> 
-  		<a href="training.html"><i class="fa fa-paw"></i></a> 
-  		<a href="activity.html"><i class="fa fa-book"></i></a>
-	</div>
-
-	<script src="js/vote.js"></script>
-</ul>
-</body>
-
+		<div>
+			<img id="pupPic" src="images/vote/vote_placeholder.JPG" height="300" width="300">
+		</div>
+		
+		<div>
+			<p class="btn" id="up">ThumbsUp</p>
+			<p class="btn" id="down">ThumbsDown</p>
+			<p class="btn" id="comment">Comment</p>
+			<p class="btn" id="report">Report</p> 
+		</div>
+		
+		<div class="bar bottom">
+	  		<a href="index.html"><i class="fa fa-home"></i></a> 
+	  		<a href="locations.html"><i class="fa fa-map-marker"></i></a> 
+	  		<a href="training.html"><i class="fa fa-paw"></i></a> 
+	  		<a href="activity.html"><i class="fa fa-book"></i></a>
+		</div>
+	</body>
 </html>
