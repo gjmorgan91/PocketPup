@@ -1,45 +1,40 @@
 <!doctype html>
 
 <html>
+	<head>
+		<title>Pocket Pup</title>
 
+		<link href="css/PocketPup.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
-<head>
-<title>Pocket Pup</title>
-<link href="css/PocketPup.css" rel="stylesheet">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-<script src="js/jquery.js"></script>
-<script src="js/home.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+		<script src="js/jquery.js"></script>
+		<script src="js/home.js"></script>
 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
 
+	<body>
 
+		<div class="bar top">
+			<a href="vote.html" id="voteButton"><i class="fa fa-group"></i></a>
+			<p class="pageTitle">PocketPup</p>
+			<a href="store.html" id="storeButton"><i class="fa fa-credit-card"></i></a>
+		</div>
 
-<body>
+		<div class="content">
+			<img id="background" src="images/bg1.png"></img>
+			<a href="profile.html" class="dog" id="currDog"><img src="images/dogs/swarley.png"></i></a>
+			<p class="btn" id="outside" onClick="BGChange()">Go outside >></p>
+			<p class="btn hidden" id="inside" onClick="BGChangeBack()"><< Go inside</p>
+		</div>
 
-<div class="bar top">
-	<a href="vote.html" id="voteButton"><i class="fa fa-group"></i></a>
-	<p class="pageTitle">PocketPup</p>
-	<a href="store.html" id="storeButton"><i class="fa fa-credit-card"></i></a>
-</div>
-
-<div>
-	<img id="background" src="images/bg1.png"></img>
-	<a href="profile.html" class="dog" id="currDog"><img src="images/dogs/swarley.png"></i></a>
-	<p class="btn" id="outside" onClick="BGChange()">Go outside >></p>
-	<p class="btn hidden" id="inside" onClick="BGChangeBack()"><< Go inside</p>
-</div>
-
-
-<div class="bar bottom">
-  <a class="active bottom" href="index.html"><i class="fa fa-home"></i></a> 
-  <a href="locations.html"><i class="fa fa-map-marker"></i></a> 
-  <a href="training.html"><i class="fa fa-paw"></i></a> 
-  <a href="activity.html"><i class="fa fa-book"></i></a>
-</div>
-
-
-</body>
+		<div class="bar bottom">
+		  <a class="active bottom" href="index.html"><i class="fa fa-home"></i></a> 
+		  <a href="locations.html"><i class="fa fa-map-marker"></i></a> 
+		  <a href="training.html"><i class="fa fa-paw"></i></a> 
+		  <a href="activity.html"><i class="fa fa-book"></i></a>
+		</div>
+	</body>
 </html>
