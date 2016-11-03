@@ -346,34 +346,36 @@ a#loginBtn{
 .storeMenu {
     position:relative;
     text-align:center;
-    font-size: 40pt;
+    font-size: 20pt;
+    padding-bottom: 10pt;
 }
 
-#furni {
+#indoor, #outdoor, #furniture, #accessories, #toys {
     background-color: white;
+    display: inline;
+    margin: 10pt;
 }
 
-#floor {
-    background-color: white;
-}
-
-#wall {
-    background-color: white;
-}
-
-#accessories {
-    background-color: white;
+.storeContent {
+    margin-left: 30pt;
+    margin-right: 30pt;
+    padding: 10pt;
+    border-style: dashed;
+    border-width: 2pt;
+    background-color: lightgrey;
+    margin-bottom: 10pt;
 }
 
 .itemIcon {
     margin: auto;
+    padding-left: 15pt;
 }
 
 #iconOne, #iconThree {
-    padding-left: 50pt;
+    padding-left: 0pt;
 }
 
-#storeTop {
+#storeTop, #storeMid {
     padding-bottom: 10pt;
 }
 
@@ -387,9 +389,14 @@ a#loginBtn{
     margin: 0pt;
 }
 
+#arrowSpace {
+    padding-top: 10pt;
+}
+
 #leftArrow, #rightArrow {
     display: inline;
     padding-left: 68pt;
+    padding-top: 10pt;
     margin: auto;
 }
 
