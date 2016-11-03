@@ -135,8 +135,8 @@ display: none;
 .voteButton {
     display: inline;
     width: 100%;
-    padding-left: 45pt;
-    font-size: 30pt;
+    padding-left: 40pt;
+    font-size: 20pt;
 }
 
 #owner {
@@ -191,8 +191,10 @@ display: none;
 }
 
 .voteSubmit {
-    background-color: grey;
-    padding-bottom: 50pt;
+    position: relative;
+    left: 252pt;
+    background-color: lightgrey;
+    padding-top: 50pt;
 }
 
 .buffer {
