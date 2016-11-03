@@ -32,7 +32,7 @@ function initializePage() {
 function BGChange() {
 
     document.getElementById("background").src = 'images/bg2.png';
-    $('#currDog').offset({top: 300, left: 200});
+    $('#currDog').offset({bottom: "140pt", left: "120pt"});
     $('#outside').hide("fast");
     $('#inside').show("fast");
 }
@@ -40,7 +40,7 @@ function BGChange() {
 function BGChangeBack() {
 
     document.getElementById("background").src = 'images/bg1.png';
-    $('#currDog').offset({top: 300, left: 100});
+    $('#currDog').offset({bottom: "130pt", left: "90pt"});
     $('#outside').show("fast");
     $('#inside').hide("fast");
 }
