@@ -123,7 +123,7 @@
 /*Vote page*/  
 
 .voteInfo {
-    padding-top: 36pt;
+    padding-top: 0pt;
     text-align: center;
     width: 100%;
 }
@@ -131,8 +131,8 @@
 .voteButton {
     display: inline;
     width: 100%;
-    padding-left: 45pt;
-    font-size: 30pt;
+    padding-left: 40pt;
+    font-size: 20pt;
 }
 
 #owner {
@@ -179,7 +179,7 @@
 
 .voteText {
     display: block;
-    width:370px;
+    width:300px;
     height:100px;
     background-color: grey;
     color:White;
@@ -187,8 +187,14 @@
 }
 
 .voteSubmit {
-    background-color: grey;
-    padding-bottom: 50pt;
+    position: relative;
+    left: 200pt;
+    background-color: lightgrey;
+    padding-top: 50pt;
+}
+
+.buffer {
+    height: 50pt;
 }
 
 /* Profile Page */
