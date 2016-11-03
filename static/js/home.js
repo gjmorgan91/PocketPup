@@ -14,6 +14,7 @@ $(document).ready(function() {
 
 
 function initializePage() {
+
     var currDOM = document.title;
 
     if (currDOM == "Pocket Pup") {
