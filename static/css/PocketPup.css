@@ -332,3 +332,27 @@ a#loginBtn{
     background-color: #b8c492;
     color: black;
 }
+
+/* Store Page */
+
+.storeMenu {
+    position:relative;
+    text-align:center;
+    font-size: 40pt;
+}
+
+#furni {
+    background-color: white;
+}
+
+#floor {
+    background-color: white;
+}
+
+#wall {
+    background-color: white;
+}
+
+#accessories {
+    background-color: white;
+}
