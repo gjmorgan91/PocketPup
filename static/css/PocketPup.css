@@ -99,8 +99,8 @@
 
 .dog {
     position: absolute;
-    bottom: 200pt;
-    left: 100pt;
+    bottom: 130pt;
+    left: 90pt;
 }
 
 .btn#outside {
@@ -233,8 +233,8 @@ p.ownerName#owner {
 
 #profDog {
     position: absolute;
-    bottom: 100pt;
-    left: 100pt;
+    bottom: 97pt;
+    left: 105pt;
 }
 
 p#breed {
