@@ -364,3 +364,31 @@ a#loginBtn{
 #accessories {
     background-color: white;
 }
+
+.itemIcon {
+    margin: auto;
+}
+
+#iconOne, #iconThree {
+    padding-left: 50pt;
+}
+
+#storeTop {
+    padding-bottom: 10pt;
+}
+
+#iconOne, #iconTwo {
+    display: inline;
+    padding-bottom: 10pt;
+}
+
+#iconThree, #iconFour {
+    display: inline;
+    margin: 0pt;
+}
+
+#leftArrow, #rightArrow {
+    display: inline;
+    padding-left: 68pt;
+    margin: auto;
+}
