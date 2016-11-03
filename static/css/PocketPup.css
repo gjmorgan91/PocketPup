@@ -87,10 +87,6 @@
     border-top-style: inset;
 }
 
-.hidden {
-display: none;
-}
-
 /* Home Screen */
 
 #background {
@@ -193,4 +189,27 @@ display: none;
 .voteSubmit {
     background-color: grey;
     padding-bottom: 50pt;
+}
+
+/* Profile Page */
+h1#dogName {
+    font-size: 40pt;
+    text-align: center;
+    position: absolute;
+    padding-top: 32pt;
+    width: 100%;
+}
+
+p.ownerName {
+    font-size: 14pt;
+    padding-left: 67pt;
+    text-align: right;
+    display: inline;
+    position: relative;
+    top: 90pt;
+    width: 100%;
+}
+
+p.ownerName#owner {
+    padding-left: 0pt;
 }
