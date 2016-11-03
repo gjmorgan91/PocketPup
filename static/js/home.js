@@ -7,15 +7,23 @@ var currDog =  {"img": "images/dogs/swarley.png",
                 "breed": "Golden Retriever",
                 "age": "2 years"};
 
-
 $(document).ready(function() {
 	initializePage();
 });
 
 
 function initializePage() {
+    var currDOM = document.title;
+
+    if (currDOM == "Pocket Pup") {
 	$('#inside').hide();
     document.getElementById("dogImg").src = currDog.img;
+    }
+
+    if (currDOM == "Profile") {
+    document.getElementById("dogName").textContent = currDog.name;
+    document.getElementById("owner").textContent = currDog.owner;
+    }
 }
 
 function BGChange() {
@@ -34,34 +42,60 @@ function BGChangeBack() {
     $('#inside').hide("fast");
 }
 
+function nextProfile() {
+    if (currDog.name == "Swarley")
+        setPoodle()
+    else if (currDog.name == "Korra")
+        setHusky()
+    else if (currDog.name == "Goji")
+        setTerrier()
+    else if (currDog.name == "Marina")
+        setSwarley()
+}
+
+function prevProfile() {
+    if (currDog.name == "Swarley")
+        setTerrier()
+    else if (currDog.name == "Korra")
+        setSwarley()
+    if (currDog.name == "Goji")
+        setKorra()
+    if (currDog.name == "Marina")
+        setGoji()
+}
+
 function setPoodle() {
     currDog.img = "images/dogs/poodle.png";
     currDog.name = "Korra";
-    curDog.owner = "Jacob Aguirre";
+    currDog.owner = "Jacob Aguirre";
     currDog.breed = "Poodle";
     currDog.age = "3 years";
+    initializePage();
 }
 
 function setHusky() {
     currDog.img = "images/dogs/husky.png";
     currDog.name = "Goji";
-    curDog.owner = "Brendon Taing";
+    currDog.owner = "Brendon Taing";
     currDog.breed = "Husky";
     currDog.age = "1 years";
+    initializePage();
 }
 
 function setTerrier() {
     currDog.img = "images/dogs/terrier.png";
     currDog.name = "Marina";
-    curDog.owner = "Tricia Ngoon";
+    currDog.owner = "Tricia Ngoon";
     currDog.breed = "Jack Terrier";
     currDog.age = "5 years";
+    initializePage();
 }
 
 function setSwarley() {
     currDog.img = "images/dogs/swarley.png";
     currDog.name = "Swarley";
-    curDog.owner = "Greg Morgan";
+    currDog.owner = "Greg Morgan";
     currDog.breed = "Golden Retriever";
     currDog.age = "2 years";
+    initializePage();
 }
