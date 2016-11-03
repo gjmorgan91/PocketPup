@@ -197,6 +197,7 @@
 }
 
 /* Profile Page */
+
 h1#dogName {
     font-size: 40pt;
     text-align: center;
@@ -217,4 +218,49 @@ p.ownerName {
 
 p.ownerName#owner {
     padding-left: 0pt;
+}
+
+/* LogIn Page */
+
+.loginBox {
+    padding: 5pt; 
+}
+
+.login {
+    display: block;
+    width: 200pt;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+.logoSpace{
+    display: block;
+    margin: 25pt;
+    padding-left: 35pt;
+    width: 80%;
+    height: 80%;
+    padding-bottom: 30pt;
+}
+
+.loginButton{
+    margin: auto;
+    padding-left: 85pt;
+    display: inline-block;
+    border: 2px;
+    border-color: darkgrey;
+    left: 80pt;
+    margin: auto;
+    font-family: "Arial";
+    text-decoration: none;
+}
+
+a#loginBtn{
+    background-color: #b8c492; 
+    color: black;
+    text-decoration: none;
+}
+
+#signinBtn{
+    background-color: #b8c492;
+    color: black;
 }
