@@ -5,7 +5,7 @@ var currDog =  {"img": "images/dogs/swarley.png",
                 "name": "Swarley",
                 "owner": "Greg Morgan",
                 "breed": "Golden Retriever",
-                "age": "2 years"};
+                "age": "2 years old"};
 
 $(document).ready(function() {
 	initializePage();
@@ -23,6 +23,9 @@ function initializePage() {
     if (currDOM == "Profile") {
     document.getElementById("dogName").textContent = currDog.name;
     document.getElementById("owner").textContent = currDog.owner;
+    document.getElementById("age").textContent = currDog.age;
+    document.getElementById("breed").textContent = currDog.breed;
+    document.getElementById("profDog").src = currDog.img;
     }
 }
 
@@ -69,7 +72,7 @@ function setPoodle() {
     currDog.name = "Korra";
     currDog.owner = "Jacob Aguirre";
     currDog.breed = "Poodle";
-    currDog.age = "3 years";
+    currDog.age = "3 years old";
     initializePage();
 }
 
@@ -78,7 +81,7 @@ function setHusky() {
     currDog.name = "Goji";
     currDog.owner = "Brendon Taing";
     currDog.breed = "Husky";
-    currDog.age = "1 years";
+    currDog.age = "1 years old";
     initializePage();
 }
 
@@ -87,7 +90,7 @@ function setTerrier() {
     currDog.name = "Marina";
     currDog.owner = "Tricia Ngoon";
     currDog.breed = "Jack Terrier";
-    currDog.age = "5 years";
+    currDog.age = "5 years old";
     initializePage();
 }
 
@@ -96,6 +99,6 @@ function setSwarley() {
     currDog.name = "Swarley";
     currDog.owner = "Greg Morgan";
     currDog.breed = "Golden Retriever";
-    currDog.age = "2 years";
+    currDog.age = "2 years old";
     initializePage();
 }
