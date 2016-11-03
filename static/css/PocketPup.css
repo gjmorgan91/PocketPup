@@ -127,6 +127,14 @@
     text-shadow: 1pt 1pt 5pt #000;
 }
 
+.btn#loginBttn {
+    position: absolute;
+    font-size: 14pt;
+    top: 40pt;
+    left: 0pt;
+    color: white;
+    text-shadow: 1pt 1pt 5pt #000;
+}
 
 /*Vote page*/  
 
