@@ -1,1 +1,135 @@
-traininglesson2
+<!doctype html>
+
+<html>
+
+
+<head>
+<title>Training</title>
+<link href="css/PocketPup.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+
+<div class="bar top">
+<a href="vote.html" id="voteButton"><i class="fa fa-group"></i></a>
+<p class="pageTitle">Training</p>
+<a href="store.html" id="storeButton"><i class="fa fa-credit-card"></i></a>
+</div>
+
+<style>
+
+
+.dropbtn {
+    background-color: orange;
+    color: white;
+    padding:5pt;
+    margin-top:35pt;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: orange;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+textarea#comment{
+	margin-bottom:40pt;
+}
+</style>
+
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Click to skip ahead</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="training.html">1:House-Breaking</a>
+    <a href="traininglesson2.html">2:Sit</a>
+    <a href="traininglesson3.html">3:Stay</a>
+  </div>
+</div>
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+
+
+
+<h1>
+	Lesson 2: Sit
+</h1>
+<h2>
+	Instructions
+</h2>
+<p>[ List of steps to teach your dog how to sit..
+	]
+	</p>
+<ol>
+	<li> ... </li>
+	<li> ... </li>
+	<li> ... </li>
+</ol>
+<h2>
+	Video Demonstration
+</h3>
+<p>
+	<iframe width="392" height="220.5" src="https://www.youtube.com/embed/WtD2GRbbyzU" frameborder="0" allowfullscreen></iframe>
+	</p>
+
+<p>
+	Any comments?
+</p>
+
+<textarea rows="4" cols="50" id="comment">
+Write something here!</textarea>
+<div class="bar bottom">
+		  <a class="active bottom" href="index.html"><i class="fa fa-home"></i></a> 
+		  <a href="locations.html"><i class="fa fa-map-marker"></i></a> 
+		  <a href="training.html"><i class="fa fa-paw"></i></a> 
+		  <a href="activity.html"><i class="fa fa-book"></i></a>
+		</div>
+</body>
+</html>
