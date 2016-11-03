@@ -392,3 +392,12 @@ a#loginBtn{
     padding-left: 68pt;
     margin: auto;
 }
+
+/* Locations */
+.locFrame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 35pt;
+    padding-bottom: 35pt;
+}
