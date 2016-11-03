@@ -127,7 +127,7 @@ display: none;
 /*Vote page*/  
 
 .voteInfo {
-    padding-top: 36pt;
+    padding-top: 0pt;
     text-align: center;
     width: 100%;
 }
@@ -183,7 +183,7 @@ display: none;
 
 .voteText {
     display: block;
-    width:370px;
+    width:300px;
     height:100px;
     background-color: grey;
     color:White;
@@ -192,7 +192,7 @@ display: none;
 
 .voteSubmit {
     position: relative;
-    left: 252pt;
+    left: 200pt;
     background-color: lightgrey;
     padding-top: 50pt;
 }
