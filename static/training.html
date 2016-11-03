@@ -23,6 +23,7 @@
 
 <style>
 
+
 .dropbtn {
     background-color: orange;
     color: white;
@@ -61,6 +62,10 @@
 .dropdown a:hover {background-color: #f1f1f1}
 
 .show {display:block;}
+
+textarea#comment{
+	margin-bottom:40pt;
+}
 </style>
 
 
@@ -118,7 +123,7 @@ window.onclick = function(event) {
 	Any comments?
 </p>
 
-<textarea rows="4" cols="50" name="comment" form="commentsection">
+<textarea rows="4" cols="50" id="comment">
 Write something here!</textarea>
 <div class="bar bottom">
 		  <a class="active bottom" href="index.html"><i class="fa fa-home"></i></a> 
