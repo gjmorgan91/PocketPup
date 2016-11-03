@@ -8,6 +8,7 @@ var currDog =  {"img": "images/dogs/swarley.png",
                 "age": "2 years old"};
 
 $(document).ready(function() {
+    $('#inside').hide();
 	initializePage();
 });
 
@@ -16,7 +17,6 @@ function initializePage() {
     var currDOM = document.title;
 
     if (currDOM == "Pocket Pup") {
-	$('#inside').hide();
     document.getElementById("dogImg").src = currDog.img;
     }
 
@@ -32,7 +32,7 @@ function initializePage() {
 function BGChange() {
 
     document.getElementById("background").src = 'images/bg2.png';
-    $('#currDog').offset({bottom: "140pt", left: "120pt"});
+    $('#currDog').offset({bottom: "140pt", left: "130pt"});
     $('#outside').hide("fast");
     $('#inside').show("fast");
 }
@@ -61,10 +61,10 @@ function prevProfile() {
         setTerrier()
     else if (currDog.name == "Korra")
         setSwarley()
-    if (currDog.name == "Goji")
-        setKorra()
-    if (currDog.name == "Marina")
-        setGoji()
+    else if (currDog.name == "Goji")
+        setPoodle()
+    else if (currDog.name == "Marina")
+        setHusky()
 }
 
 function setPoodle() {
