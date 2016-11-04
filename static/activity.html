@@ -20,7 +20,7 @@ h1{
 h3{
 	text-align:center;
 }
-img{
+img#swarleypic{
 	margin-left:100pt;
 }
 p#time1{
@@ -36,7 +36,7 @@ p#time2{
 	Swarley
 </h1>
 
-<img src="images/dogs/swarley.png" alt="pic_of_swarley">
+<img id="swarleypic" src="images/dogs/swarley.png" alt="pic_of_swarley">
 
 
 <h3>The last time you fed Swarley was:
@@ -49,7 +49,10 @@ p#time2{
 <h3>
 	Here's what users thought of Swarley's training!
 	</h3>
-<img src="images/vote/vote_placeholder.JPG" alt="Swarley_training" height="220.5" width="350">
+
+<center>
+<img id="swarleytraining" src="images/vote/vote_placeholder.JPG" alt="Swarley_training" height="220.5" width="350">
+</center>
 
 <script>
 document.getElementById("time1").innerHTML = Date();
