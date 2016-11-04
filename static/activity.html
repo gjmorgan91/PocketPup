@@ -12,8 +12,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<style>
+h1{
+	margin-top:50pt;
+	text-align:center;
+}
+h3{
+	text-align:center;
+}
+img{
+	margin-left:100pt;
+}
+p#time1{
+	text-align:center;
+}
+p#time2{
+	text-align:center;
+}
+</style>
 
 <body>
+<h1>
+	Swarley
+</h1>
+
+<img src="images/dogs/swarley.png" alt="pic_of_swarley">
+
+
+<h3>The last time you fed Swarley was:
+</h3>
+<p id="time1"></p>
+<h3>The last time you walked Swarley was:
+	</h3>
+<p id="time2"></p>
+
+<h3>
+	Here's what users thought of Swarley's training!
+	</h3>
+<img src="images/vote/vote_placeholder.JPG" alt="Swarley_training" height="220.5" width="350">
+
+<script>
+document.getElementById("time1").innerHTML = Date();
+document.getElementById("time2").innerHTML = Date();
+</script>
 
 <div class="bar top">
 <a href="activity.html" id="actButton"><i class="fa fa-book"></i></a>
