@@ -1,4 +1,4 @@
-var projects = require('../data.json');
+var projects = require('../projects.json');
 
 exports.projectInfo = function(req, res) {
   var projectID = req.params.id;

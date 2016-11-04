@@ -15,12 +15,26 @@ function intializePage() {
 	var dislike = true;
 	var inputGiven = false;
 	var submitThis = false;
+	var submitReady = false;
 
-	$.get("../data.json", updateVote());
+	//$.get("../data.json", updateVote());
 
 	//get more pictures to make the valid submit change to another image
 	//determine how to store the vote to the picture
 	//page will need to load one of the preset profiles and images
+
+	/*function addProjectDetails(e) {
+		// Prevent following the link
+		e.preventDefault();
+
+		// Get the div ID, e.g., "project3"
+		var projectID = $(this).closest('.project').attr('id');
+		// get rid of 'project' from the front of the id 'project3'
+		var idNumber = projectID.substr('project'.length);
+
+		console.log("User clicked on project " + idNumber);
+	}*/
+
 
 	$('#up').click(UpVote);
 	function UpVote(event) {
@@ -36,6 +50,7 @@ function intializePage() {
 			submitThis = true;
 			$('.voteSubmit').show();
 		}
+		submitReady = true;
 	}
 
 	$('#down').click(DownVote);
@@ -52,6 +67,7 @@ function intializePage() {
 			submitThis = true;
 			$('.voteSubmit').show();
 		}
+		submitReady = true;
 	}
 
 	$('#comment').click(showComment);
@@ -64,15 +80,22 @@ function intializePage() {
 		}
 	}
 
+	$('#submit').click(readySubmit);
+	function readySubmit(event) {
+		//load a new training topic into the page from the json
+	}
+
 	$('.report').click(reportThis);
 	function reportThis(event) {
-		$.get("../data.json", updateVote());
+		//$.get("../data.json", updateVote());
+		//swap out to another topic without giving an input
 	}
 
 	function addProjectDetails(result) {
 
 	}
 
+	/*
 	function updateVote(result) {
 		console.log(result);
 		var nameHTML = '<h3 id="owner">' + result[ownName] + '</h3>';
@@ -84,6 +107,6 @@ function intializePage() {
 		$('#dog').html(dogHTML);
 		$('#topic').html(topicHTML);
 		$('#pupPip').html(imageHTML);
-	}
+	}*/
 
 }
