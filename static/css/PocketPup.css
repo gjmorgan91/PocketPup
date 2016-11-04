@@ -205,7 +205,7 @@
     position: relative;
     left: 200pt;
     background-color: lightgrey;
-    padding-top: 50pt;
+    margin-top: 5pt;
 }
 
 .buffer {

@@ -16,6 +16,8 @@ function intializePage() {
 	var inputGiven = false;
 	var submitThis = false;
 
+	$.get("../data.json", updateVote());
+
 	//get more pictures to make the valid submit change to another image
 	//determine how to store the vote to the picture
 	//page will need to load one of the preset profiles and images
@@ -67,10 +69,21 @@ function intializePage() {
 		$.get("../data.json", updateVote());
 	}
 
+	function addProjectDetails(result) {
+
+	}
+
 	function updateVote(result) {
 		console.log(result);
-		
+		var nameHTML = '<h3 id="owner">' + result[ownName] + '</h3>';
+		var dogHTML = '<h3 id="pet">' + result[dogName] + '</h3>';
+		var topicHTML = '<h2 id="topic">' + result[topicName] + '</h2>';
+		var imageHTML = '<img id="pupPic" src="' + result[image] + ' height="300" weidth="300">';
 
+		$('#owner').html(nameHTML);
+		$('#dog').html(dogHTML);
+		$('#topic').html(topicHTML);
+		$('#pupPip').html(imageHTML);
 	}
 
 }
