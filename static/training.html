@@ -16,7 +16,7 @@
 <body>
 
 <div class="bar top">
-<a href="vote.html" id="voteButton"><i class="fa fa-check-square-o"></i></a>
+<a href="activity.html" id="actButton"><i class="fa fa-book"></i></a>
 <p class="pageTitle">Training</p>
 <a href="store.html" id="storeButton"><i class="fa fa-credit-card"></i></a>
 </div>
@@ -70,6 +70,7 @@ h2{
 textarea#comment{
 	text-align:center;
 	margin-bottom:40pt;
+  border-color: black;
 }
 </style>
 
@@ -133,14 +134,14 @@ window.onclick = function(event) {
 </div>
 <div align="center"
 <p>
-<textarea rows="4" cols="35" id="comment">
+<textarea rows="4" cols="35" id="comment" onfocus="if(this.value=='Write something here!') this.value='';">
 Write something here!</textarea></p>
 </div>
 <div class="bar bottom">
-		  <a class="active bottom" href="index.html"><i class="fa fa-home"></i></a> 
+		  <a href="index.html"><i class="fa fa-home"></i></a> 
 		  <a href="locations.html"><i class="fa fa-map-marker"></i></a> 
-		  <a href="training.html"><i class="fa fa-paw"></i></a> 
-		  <a href="activity.html"><i class="fa fa-book"></i></a>
+		  <a href="training.html" class="active bottom"><i class="fa fa-paw"></i></a> 
+      <a href="vote.html"><i class="fa fa-check-square-o"></i></a>
 		</div>
 </body>
 </html>
