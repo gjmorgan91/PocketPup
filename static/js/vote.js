@@ -69,7 +69,18 @@ function intializePage() {
 
 	function updateVote(result) {
 		console.log(result);
-		
+	}
+
+	$('#submitButton').click(submitComment);
+	function submitComment() {
+		dislike = true;
+		like = true;
+		$('.voteText').hide();
+		document.getElementById("pupPic").src = "images/vote/vote_dog2.jpg";
+		document.getElementById("owner").textContent = "Jacob Aguirre's";
+		document.getElementById("pet").textContent = "Korra";
+		document.getElementById("topic").textContent = "Puttin' on the Ritz";
+
 
 	}
 
