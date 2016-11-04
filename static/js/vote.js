@@ -121,3 +121,4 @@ function intializePage() {
 		document.getElementById("pet").textContent = "Korra";
 		document.getElementById("topic").textContent = "Puttin' on the Ritz";
 }
+}
