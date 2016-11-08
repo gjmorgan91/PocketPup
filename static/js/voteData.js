@@ -1,4 +1,4 @@
-var projects = require('../voteData.json');
+var projects = require('../data.json');
 
 exports.projectInfo = function(req, res) {
   var projectID = req.params.id;

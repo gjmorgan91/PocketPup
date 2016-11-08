@@ -2,87 +2,89 @@
 
 <html>
 
-	<head>
-		<title>Activity</title>
-		<link href="css/PocketPup.css" rel="stylesheet">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
+<head>
+<title>Activity</title>
+<link href="css/PocketPup.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-	<style>
-		h1{
-			margin-top:50pt;
-			text-align:center;
-		}
-		h3{
-			text-align:center;
-		}
-		img#swarleypic{
-			margin-left:100pt;
-		}
-		img#swarleytraining{
-			margin-bottom:50pt;
-			border-width: 5pt;
-			border-color: #b8c492;
-			border-style: solid;
-		}
-		p#time1{
-			text-align:center;
-		}
-		p#time2{
-			text-align:center;
-		}
+<style>
+h1{
+	margin-top:50pt;
+	text-align:center;
+}
+h3{
+	text-align:center;
+}
+img#swarleypic{
+	margin-left:100pt;
+}
+img#swarleytraining{
+	margin-bottom:50pt;
+}
+p#time1{
+	text-align:center;
+}
+p#time2{
+	text-align:center;
+}
 
-		i#up{
-			margin-left:100pt;
-		}
-		i#down{
-			margin-left:20pt;
-		}
-	</style>
+i#up{
+	margin-left:100pt;
+}
+i#down{
+	margin-left:20pt;
+}
+</style>
 
-	<body>
-		<div class="bar top">
-			<a href="activity.html" id="actButton" class="active top"><i class="fa fa-book"></i></active>
-			<p class="pageTitle">Activity</p>
-			<a href="store.html" id="storeButton"><i class="fa fa-credit-card"></i></a>
-		</div>
+<body>
+<div class="bar top">
+<a href="activity.html" id="actButton" class="active top"><i class="fa fa-book"></i></a>
+<p class="pageTitle">Activity</p>
+<a href="store.html" id="storeButton"><i class="fa fa-credit-card"></i></a>
+</div>
 
-		<h1>Swarley</h1>
+<h1>
+	Swarley
+</h1>
 
-		<img id="swarleypic" src="images/dogs/swarley.png" alt="pic_of_swarley">
+<img id="swarleypic" src="images/dogs/swarley.png" alt="pic_of_swarley">
 
-		<h3>The last time you fed Swarley was:</h3>
-		<p id="time1"></p>
-		<h3>The last time you walked Swarley was:</h3>
-		<p id="time2"></p>
+<h3>The last time you fed Swarley was:
+</h3>
+<p id="time1"></p>
+<h3>The last time you walked Swarley was:
+	</h3>
+<p id="time2"></p>
 
-		<h3>Here's what users thought of Swarley's training!</h3>
-		
-		<div>
-			<p> <i id="up" class="fa fa-thumbs-o-up" aria-hidden="true"></i>131
-			<i id="down" class="fa fa-thumbs-o-down" aria-hidden="true"></i> 3</p>
-		</div>
+<h3>
+	Here's what users thought of Swarley's training!
+	</h3>
+<div>
+<p> <i id="up" class="fa fa-thumbs-o-up" aria-hidden="true"></i>131
+	<i id="down" class="fa fa-thumbs-o-down" aria-hidden="true"></i> 3</p>
+</div>
 
-		<center>
-			<img id="swarleytraining" src="images/vote/vote_placeholder.JPG" alt="Swarley_training" height="250" width="auto">
-		</center>
+<center>
+<img id="swarleytraining" src="images/vote/vote_placeholder.JPG" alt="Swarley_training" height="220.5" width="350">
+</center>
 
-		<script>
-			document.getElementById("time1").innerHTML = Date();
-			document.getElementById("time2").innerHTML = Date();
-		</script>
-
-
-		<div class="bar bottom">
-  			<a href="index.html"><i class="fa fa-home"></i></a> 
-  			<a href="locations.html"><i class="fa fa-map-marker"></i></a> 
-  			<a href="training.html"><i class="fa fa-paw"></i></a> 
-			<a href="vote.html"><i class="fa fa-check-square-o"></i></a>
-		</div>
+<script>
+document.getElementById("time1").innerHTML = Date();
+document.getElementById("time2").innerHTML = Date();
+</script>
 
 
-	</body>
+<div class="bar bottom">
+  <a href="index.html"><i class="fa fa-home"></i></a> 
+  <a href="locations.html"><i class="fa fa-map-marker"></i></a> 
+  <a href="training.html"><i class="fa fa-paw"></i></a> 
+<a href="vote.html"><i class="fa fa-check-square-o"></i></a>
+</div>
+
+
+</body>
 </html>

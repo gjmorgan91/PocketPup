@@ -357,23 +357,21 @@ a#loginBtn{
 }
 
 .storeContent {
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 4%;
-    padding-left: 7%;
+    margin-left: 30pt;
+    margin-right: 30pt;
+    padding: 10pt;
     border-style: dashed;
     border-width: 2pt;
     background-color: lightgrey;
-    margin-bottom: 3%;
+    margin-bottom: 10pt;
 }
 
 .itemIcon {
     margin: auto;
-    padding-left: 0pt;
-    padding-right: 0pt;
+    padding-left: 15pt;
 }
 
-#iconOne, #iconThree, #iconFour {
+#iconOne, #iconThree {
     padding-left: 0pt;
 }
 
