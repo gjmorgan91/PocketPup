@@ -408,3 +408,58 @@ a#loginBtn{
     padding-top: 35pt;
     padding-bottom: 35pt;
 }
+
+/* Sign Up */
+.signupBox {
+    padding: 5pt;
+}
+
+.signup {
+    display: block;
+    width: 200pt;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+#signupDog {
+    position: fixed;
+    left: 35%;
+    top: 150pt;
+}
+
+#signupBreed {
+    font-size: 2em;
+    position: fixed;
+    top: 250pt;
+    width: 100%;
+    text-align: center;
+}
+
+#signSubmit {
+    background-color: #b8c492; 
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px;
+    border-color: darkgrey;
+    margin: auto;
+    position: fixed;
+    top: 275pt;
+    left: 38%;
+}
+
+.btn#signPrev {
+    font-size: 2em;
+    position: fixed;
+    top: 200pt;
+    left: 50pt;
+    color: darkgrey;
+}
+
+.btn#signNext {
+    font-size: 2em;
+    position: absolute;
+    top: 200pt;
+    right: 50pt;
+    color: darkgrey;
+}

@@ -18,25 +18,23 @@
 	<body>
 
 		<div class="bar top">
-			<a href="activity.html" id="actButton"><i class="fa fa-book"></i></a>
+			<a href="activity" id="actButton"><i class="fa fa-book"></i></a>
 			<p class="pageTitle">PocketPup</p>
-			<a href="store.html" id="storeButton"><i class="fa fa-credit-card"></i></a>
+			<a href="store" id="storeButton"><i class="fa fa-credit-card"></i></a>
 		</div>
 
 		<div class="content">
 			<img id="background" src="images/bg1.png"></img>
-			<a href="profile.html" class="dog" id="currDog"><img id="dogImg" src="images/dogs/swarley.png"></i></a>
+			<a href="profile" class="dog" id="currDog"><img id="dogImg" src="{{avatar}}"></i></a>
 			<p class="btn" id="outside" onClick="BGChange()">Go outside >></p>
 			<p class="btn" id="inside" onClick="BGChangeBack()"><< Go inside</p>
-			<p class="btn" id="nextDog" onClick="nextProfile()">Change dog</p>
-			<a class="btn" id="loginBttn" href="login.html"><i>Log in</i></a>
 		</div>
 
 		<div class="bar bottom">
-		  <a class="active bottom" href="views/index.handlebars"><i class="fa fa-home"></i></a> 
-		  <a href="views/locations.html"><i class="fa fa-map-marker"></i></a> 
-		  <a href="training.html"><i class="fa fa-paw"></i></a> 
-		  <a href="vote.handlebars"><i class="fa fa-check-square-o"></i></a>
+		  <a class="active bottom"><i class="fa fa-home"></i></a> 
+		  <a href="locations"><i class="fa fa-map-marker"></i></a> 
+		  <a href="training"><i class="fa fa-paw"></i></a> 
+		  <a href="vote"><i class="fa fa-check-square-o"></i></a>
 		</div>
 	</body>
 </html>

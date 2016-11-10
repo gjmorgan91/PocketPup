@@ -15,7 +15,11 @@ var login = require('./routes/login');
 var vote = require('./routes/vote');
 var home = require('./routes/home');
 var store = require('./routes/store');
+<<<<<<< HEAD
 var locations = require('./routes/locations');
+=======
+var signup = require('./routes/signup');
+>>>>>>> 40efe6bb2f5046906a55b8ba9487a63c7cf60840
 // Example route
 // var user = require('./routes/user');
 
@@ -48,6 +52,10 @@ app.get('/vote/setIndex',vote.setIndex);
 app.get('/home',home.view);
 app.get('/store',store.view);
 app.get('/locations',locations.view);
+app.get('/signup',signup.view);
+app.get('/signup/getDog',signup.getDog);
+app.post('/signup/update',signup.update);
+app.post('/signup/updateProfile',signup.updateProfile);
 
 // Example route
 // app.get('/users', user.list);
