@@ -10,6 +10,7 @@ function intializePage() {
 	$('#thumbsUp').hide();
 	$('.voteText').hide();
 	$('.voteSubmit').hide();
+}
 
 	var like = true;
 	var dislike = true;
@@ -61,9 +62,14 @@ function intializePage() {
 		}
 	}
 
-	$('#submit').click(readySubmit);
-	function readySubmit(event) {
+	$('#submitButton').click(readySubmit);
+	function readySubmit() {
+		$.get("/vote/setIndex", nextItem);
 		//load a new training topic into the page from the json
+	}
+
+	function nextItem() {
+		loaction.reload();
 	}
 
 	$('.report').click(reportThis);
@@ -75,14 +81,13 @@ function intializePage() {
 
 	}
 
-	$('#submitButton').click(submitComment);
-	function submitComment() {
-		dislike = true;
-		like = true;
-		$('.voteText').hide();
-		document.getElementById("pupPic").src = "images/vote/vote_dog2.jpg";
-		document.getElementById("owner").textContent = "Jacob Aguirre's";
-		document.getElementById("pet").textContent = "Korra";
-		document.getElementById("topic").textContent = "Puttin' on the Ritz";
-}
-}
+// 	$('#submitButton').click(submitComment);
+// 	function submitComment() {
+// 		dislike = true;
+// 		like = true;
+// 		$('.voteText').hide();
+// 		document.getElementById("pupPic").src = "images/vote/vote_dog2.jpg";
+// 		document.getElementById("owner").textContent = "Jacob Aguirre's";
+// 		document.getElementById("pet").textContent = "Korra";
+// 		document.getElementById("topic").textContent = "Puttin' on the Ritz";
+// }

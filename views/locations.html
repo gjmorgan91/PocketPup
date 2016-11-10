@@ -6,8 +6,8 @@
 	<head>
 		<title>Locations</title>
 		<link href="/css/PocketPup.css" rel="stylesheet">
-		<link href="/css/bootstrap.css" rel="stylesheet">
-		<link href="/css/bootstrap-theme.css" rel="stylesheet">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
@@ -21,11 +21,9 @@
 			<a href="store.handlebars" id="storeButton"><i class="fa fa-credit-card"></i></a>
 		</div>
 
-		{{#each location}}
+		{{#each locations}}
 		<div>
-			<p class="locHeading" id="locName">{{locName}}</p>
-			<p class="locHeading" id="locRating">{{locRating}}</p>
-			<iframe class="locFrame" frameborder="0" style="border:0" src="{{locURL}}" width="80%" height="auto"></iframe>
+			<iframe class="locFrame" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=Dog%20park%20ucsd&key=AIzaSyAcWoIs_9TLAdtxNxrRoKh74cYnZndN7V0" width="80%" height="auto"></iframe>
 		</div>
 		{{/each}}
 

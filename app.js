@@ -15,6 +15,7 @@ var login = require('./routes/login');
 var vote = require('./routes/vote');
 var home = require('./routes/home');
 var store = require('./routes/store');
+var locations = require('./routes/locations');
 // Example route
 // var user = require('./routes/user');
 
@@ -43,8 +44,10 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/',login.view);
 app.get('/vote',vote.view);
+app.get('/vote/setIndex',vote.setIndex);
 app.get('/home',home.view);
 app.get('/store',store.view);
+app.get('/locations',locations.view);
 
 // Example route
 // app.get('/users', user.list);

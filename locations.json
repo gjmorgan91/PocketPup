@@ -1,0 +1,22 @@
+	[{
+		"id": 1,
+		"locType": "Park",
+		"locName": "Doyle Dog Park",
+		"locRating": "3",
+		"locURL": "https://www.google.com/maps/place/Doyle+Dog+Park/@32.8643214,-117.2193344,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc00d431092f8b:0xaf2f11d645fcba29!8m2!3d32.8643214!4d-117.2171457?hl=en",
+		"comments": "0"
+	}, {
+		"id": 2,
+		"locType": "Park",
+		"locName": "Nobel Leash-Free Park",
+		"locRating": "3",
+		"locURL": "https://www.google.com/maps/place/Nobel+Leash-Free+Park/@32.8651046,-117.2108384,14.19z/data=!4m8!1m2!2m1!1sdog+park+ucsd!3m4!1s0x0:0xb3d59a06bf2b2db1!8m2!3d32.8672739!4d-117.1980661?hl=en",
+		"comments": "0"
+	}, {
+		"id": 3,
+		"locType": "Park",
+		"locName": "Rose Canyone Open Space Park",
+		"locRating": "1",
+		"locURL": "https://www.google.com/maps/place/Rose+Canyon+Open+Space+Park/@32.8628876,-117.2376653,14.69z/data=!4m8!1m2!2m1!1sdog+park+ucsd!3m4!1s0x0:0xc3a78e25d253a508!8m2!3d32.8600148!4d-117.212491?hl=en",
+		"comments": "0"
+	}]

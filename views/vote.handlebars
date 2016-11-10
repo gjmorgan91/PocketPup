@@ -6,8 +6,8 @@
 		<title>Vote</title>
 
 		<link href="css/PocketPup.css" rel="stylesheet">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
  
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@
 
 	<div>
 		<textarea class="voteText" cols="45" rows="5" onfocus="if(this.value=='Write your comment here!') this.value='';">Write your comment here!</textarea>
-		<p class="btn voteSubmit" id="submitButton">Submit</p>
+		<p class="btn voteSubmit" id="submitButton" onclick="readySubmit">Submit</p>
 	</div>
 
 	<div class="buffer"></div>
@@ -57,6 +57,7 @@
 	</div>
 
 	<script src="js/jquery.js"></script>
+	<!--<script src="../routes/vote.js"></script>-->
 	<script src="js/vote.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap.js"></script>
