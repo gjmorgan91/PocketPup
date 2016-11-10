@@ -1,4 +1,8 @@
-'use strict';
+var like = true;
+var dislike = true;
+var inputGiven = false;
+var submitThis = false;
+var submitReady = false;
 
 $(document).ready(function() {
 	intializePage();
@@ -11,12 +15,6 @@ function intializePage() {
 	$('.voteText').hide();
 	$('.voteSubmit').hide();
 }
-
-	var like = true;
-	var dislike = true;
-	var inputGiven = false;
-	var submitThis = false;
-	var submitReady = false;
 
 	$('#up').click(UpVote);
 	function UpVote(event) {
