@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<title>Sign Up</title>
+
+		<link href="css/PocketPup.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+
+		<script src="js/jquery.js"></script>
+		<script src="js/signup.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+#id
+	<body>
+
+		<div class="bar top">
+			<p class="pageTitle">Sign Up</p>
+		</div>
+
+		<div class="buffer"></div>
+
+		<div class="signupBox">
+			<input class="signup" id="signupOwner" cols="30" rows="1" placeholder="Your name"></input>
+		</div>
+		
+		<div class="signupBox">
+			<input class="signup" id="signupDogName" cols="30" rows="1" placeholder="Dog's Name"></input>
+		</div>
+
+		<div class="signupBox">
+			<input class="signup" id="signupAge" cols="30" rows="1" placeholder="Dog's Age"></input>
+		</div>
+
+		<div>
+			<img id="signupDog" src="{{avatar}}"></img>
+			<p id="signupBreed">{{breed}}</p>
+			<p class="btn" id="signNext">>></p>
+			<p class="btn" id="signPrev"><<</p>
+		</div>
+
+		<div>
+			<a class="btn" href="home" id="signSubmit"><i>Submit</i></a>
+		</div>
+
+</html>

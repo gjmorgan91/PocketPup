@@ -15,6 +15,7 @@ var login = require('./routes/login');
 var vote = require('./routes/vote');
 var home = require('./routes/home');
 var store = require('./routes/store');
+var signup = require('./routes/signup');
 // Example route
 // var user = require('./routes/user');
 
@@ -45,6 +46,7 @@ app.get('/',login.view);
 app.get('/vote',vote.view);
 app.get('/home',home.view);
 app.get('/store',store.view);
+app.get('/signup',signup.view);
 
 // Example route
 // app.get('/users', user.list);
