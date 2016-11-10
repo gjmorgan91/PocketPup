@@ -7,7 +7,6 @@ exports.view = function(req, res) {
 exports.getDog = function(req, res) {
 	res.json(profile[0]);
 }
-
 exports.update = function(req, res) {
 	profile[0].avatar = req.body.avatar;
 	profile[0].breed = req.body.breed;
