@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Pocket Pup</title>
+
+		<link href="css/PocketPup.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="js/home.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+		<div class="bar top">
+			<a href="activity.html" id="actButton"><i class="fa fa-book"></i></a>
+			<p class="pageTitle">PocketPup</p>
+			<a href="store.html" id="storeButton"><i class="fa fa-credit-card"></i></a>
+		</div>
+
+		<div class="content">
+			<img id="background" src="images/bg1.png"></img>
+			<a href="profile.html" class="dog" id="currDog"><img id="dogImg" src="images/dogs/swarley.png"></i></a>
+			<p class="btn" id="outside" onClick="BGChange()">Go outside >></p>
+			<p class="btn" id="inside" onClick="BGChangeBack()"><< Go inside</p>
+			<p class="btn" id="nextDog" onClick="nextProfile()">Change dog</p>
+			<a class="btn" id="loginBttn" href="login.html"><i>Log in</i></a>
+		</div>
+
+		<div class="bar bottom">
+		  <a class="active bottom" href="views/index.handlebars"><i class="fa fa-home"></i></a> 
+		  <a href="views/locations.html"><i class="fa fa-map-marker"></i></a> 
+		  <a href="training.html"><i class="fa fa-paw"></i></a> 
+		  <a href="vote.handlebars"><i class="fa fa-check-square-o"></i></a>
+		</div>
+	</body>
+</html>
