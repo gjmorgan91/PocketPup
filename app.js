@@ -47,6 +47,9 @@ app.get('/vote',vote.view);
 app.get('/home',home.view);
 app.get('/store',store.view);
 app.get('/signup',signup.view);
+app.get('/signup/getDog',signup.getDog);
+app.post('/signup/update',signup.update);
+app.post('/signup/updateProfile',signup.updateProfile);
 
 // Example route
 // app.get('/users', user.list);
