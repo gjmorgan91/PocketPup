@@ -1,13 +1,13 @@
 var storePage = require('../store.json');
 var profile = require('../profiles.json');
 
-var page = JSON.parse(storePage.indoor[0]);
+var currStore = 0;
 
 exports.view = function(req, res){
-	// console.log(page.indoor);
-	// res.render('store', page.indoor);
+	var currStoreItems = JSON.stringify(storePage.indoor);
+	res.render('store', currStoreItems);
 }
 
-exports.view = function(req, res){
+/*exports.view = function(req, res){
     res.render('store', profile[0]);
-};
+};*/
