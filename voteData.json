@@ -1,9 +1,10 @@
-	[{
+	[	{"index": "1"
+	}, 	{
 		"id": 1,
 		"ownName": "Gregory Morgan",
 		"dogName": "Swarley",
 		"topicName": "Being Kewl",
-		"image": "images/vote/vote_placeholder.JPG",
+		"image": "images/vote/vote_dog1.jpg",
 		"likes": "0",
 		"dislikes": "0",
 		"totalCount": "0",
@@ -16,6 +17,42 @@
 		"dogName": "Korra",
 		"topicName": "Punk Ass Bitch",
 		"image": "images/vote/vote_dog2.jpg",
+		"likes": "0",
+		"dislikes": "0",
+		"totalCount": "0",
+		"commentCount": "0",
+		"comment0": "null",
+		"report": "0"
+	}, {
+		"id": 3,
+		"ownName": "Brendon Taing",
+		"dogName": "Goji",
+		"topicName": "Weeping",
+		"image": "images/vote/vote_dog3.jpg",
+		"likes": "0",
+		"dislikes": "0",
+		"totalCount": "0",
+		"commentCount": "0",
+		"comment0": "null",
+		"report": "0"
+	}, {
+		"id": 4,
+		"ownName": "Tricia Ngoon",
+		"dogName": "Marina",
+		"topicName": "Lamenting",
+		"image": "images/vote/vote_dog4.jpg",
+		"likes": "0",
+		"dislikes": "0",
+		"totalCount": "0",
+		"commentCount": "0",
+		"comment0": "null",
+		"report": "0"
+	}, {
+		"id": 5,
+		"ownName": "Phillip Guo",
+		"dogName": "Joey",
+		"topicName": "Chilling",
+		"image": "images/vote/vote_dog5.jpg",
 		"likes": "0",
 		"dislikes": "0",
 		"totalCount": "0",
