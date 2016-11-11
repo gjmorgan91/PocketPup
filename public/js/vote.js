@@ -3,6 +3,7 @@ var dislike = true;
 var inputGiven = false;
 var submitThis = false;
 var submitReady = false;
+var boneValue = 10;
 
 $(document).ready(function() {
 	intializePage();
@@ -47,7 +48,7 @@ function DownVote() {
 
 function showComment(event) {
 	$('.voteText').show();
-	window.scrollTo(0,5000);
+	window.scrollTo(0,2000);
 	if (submitThis == false) {
 		submitThis = true;
 		$('.voteSubmit').show();
@@ -55,6 +56,8 @@ function showComment(event) {
 }
 
 function readySubmit() {
+	$('.voteSubmit').text("+10 Bones");
+	$.post("/vote/giveBones", {"boneValue": boneValue});
 	$.get("/vote/setIndex", nextItem());
 }
 
