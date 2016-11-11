@@ -1,25 +1,18 @@
 var projects = require('../voteData.json');
 
-var index = 0;
+var index = 1;
 
 exports.view = function(req, res) {
-	//var projectID = req.votePosts[0].id;
-	var projectID = projects[index].id;
-	console.log(projectID);
-	// var project = getProjectData(projectID);
+	index = parseInt(projects[0].index);
+	console.log(index);
 	console.log(projects);
 	res.render('vote', projects[index]);
 }
-//'vote' refers to the handlebar file to run
-
-function getProjectData(projectID){
-	projectID = parseInt(projectID);
-
-	var project = projects[projectID-1];
-	return project; 
-}
 
 exports.setIndex = function(req, res) {
-	index++;
-	console.log("reload");
+	if (index == 5)
+		index = 0
+	else
+		index++
+	projects[0].index = index.toString();
 }

@@ -9,9 +9,12 @@
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/bootstrap-theme.css" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+		<script src="js/jquery.js"></script>
+		<script src="js/vote.js"></script>
+		<script src="js/bootstrap.js"></script>
  
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--Names the page, links the CSS files, and sets the viewport size -->
 	</head>
 
 	<body style="height:100%; width:100%; overflow:auto;">
@@ -29,38 +32,32 @@
 			<h2 id="topic">{{topicName}}</h2>
 		</div>
 
-	<div>
-		<img id="pupPic" src="{{image}}" height="300" weidth="300">
-		<p class="reaction" id="thumbsUp"><i class="fa fa-thumbs-o-up"></i></p>
-		<p class="reaction" id="thumbsDown"><i class="fa fa-thumbs-o-down"></i></p>
-	</div>
+		<div>
+			<img id="pupPic" src="{{image}}" height="300" weidth="300">
+			<p class="reaction" id="thumbsUp"><i class="fa fa-thumbs-o-up"></i></p>
+			<p class="reaction" id="thumbsDown"><i class="fa fa-thumbs-o-down"></i></p>
+		</div>
 	
-	<div>
-		<p class="voteButton" id="up"><i class="fa fa-thumbs-o-up"></i></p>
-		<p class="voteButton" id="down"><i class="fa fa-thumbs-o-down"></i></p>
-		<p class="voteButton" id="comment"><i class="fa fa-commenting-o"></i></p>
-		<p class="voteButton" id="report"><i class="fa fa-warning"></i></p> 
-	</div>
+		<div>
+			<p class="voteButton" id="up" onclick="UpVote()"><i class="fa fa-thumbs-o-up"></i></p>
+			<p class="voteButton" id="down" onclick="DownVote()"><i class="fa fa-thumbs-o-down"></i></p>
+			<p class="voteButton" id="comment" onclick="showComment()"><i class="fa fa-commenting-o"></i></p>
+			<p class="voteButton" id="report" onclick="reportThis()"><i class="fa fa-warning"></i></p> 
+		</div>
 
-	<div>
-		<textarea class="voteText" cols="45" rows="5" onfocus="if(this.value=='Write your comment here!') this.value='';">Write your comment here!</textarea>
-		<p class="btn voteSubmit" id="submitButton" onclick="readySubmit">Submit</p>
-	</div>
+		<div>
+			<textarea class="voteText" cols="45" rows="5" onfocus="if(this.value=='Write your comment here!') this.value='';">Write your comment here!</textarea>
+			<p class="btn voteSubmit" id="submitButton" onclick="readySubmit()">Submit</p>
+		</div>
 
-	<div class="buffer"></div>
+		<div class="buffer"></div>
 
-	<div class="bar bottom">
-  		<a href="home"><i class="fa fa-home"></i></a> 
-  		<a href="locations"><i class="fa fa-map-marker"></i></a> 
-  		<a href="training"><i class="fa fa-paw"></i></a> 
-		<a href="vote" class="active bottom"><i class="fa fa-check-square-o"></i></a>
-	</div>
-
-	<script src="js/jquery.js"></script>
-	<!--<script src="../routes/vote.js"></script>-->
-	<script src="js/vote.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-</body>
+		<div class="bar bottom">
+  			<a href="home"><i class="fa fa-home"></i></a> 
+  			<a href="locations"><i class="fa fa-map-marker"></i></a> 
+  			<a href="training"><i class="fa fa-paw"></i></a> 
+			<a href="vote" class="active bottom"><i class="fa fa-check-square-o"></i></a>
+		</div>
+	</body>
 
 </html>

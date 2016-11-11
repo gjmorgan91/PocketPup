@@ -1,16 +1,16 @@
 {
-  "name": "cs147-lab-1",
-  "description": "Serving static content via html files",
+  "name": "PocketPup",
+  "description": "Project for COGS 120",
   "version": "0.0.1",
-  "author": "CS147 Staff <cs147@cs.stanford.edu>",
+  "author": "Jacob Aguirre, Greg Morgan, Brendon Taing",
 
   "repository": {
   	"type": "git",
-  	"url": "https://github.com/StanfordHCI/cs147"
+  	"url": "https://github.com/jaguirre1231/PocketPup"
   },
   "license": "MIT",
 
-  "main": "server.js",
+  "main": "app.js",
   "dependencies": {
     "express": "3.x"
   },
