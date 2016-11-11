@@ -192,6 +192,17 @@
     font-size: 150pt;
 }
 
+#voteReport {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    color: white;
+    top: 180px;
+    width: 100%;
+    z-index; -1;
+    font-size: 150pt;
+}
+
 .voteText {
     display: block;
     width:300px;
