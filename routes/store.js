@@ -1,9 +1,10 @@
 var storePage = require('../store.json');
 var profile = require('../profiles.json');
+var currStore = 0;
 
 exports.view = function(req, res){
-	console.log(storePage.indoor);
-	// res.render('store', page.indoor);
+	var currStoreItems = JSON.stringify(storePage.indoor);
+	res.render('store', currStoreItems);
 }
 
 /*exports.view = function(req, res){
