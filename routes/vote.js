@@ -17,8 +17,8 @@ exports.setIndex = function(req, res) {
 }
 
 exports.giveBones = function(req, res) {
-	parseInt(profile[0].bones);
-	parseInt(req.body.bones);
+	console.log(parseInt(profile[0].bones));
+	console.log(parseInt(req.body.bones));
 	profile[0].bones = parseInt(profile[0].bones) + parseInt(req.body.boneValue);
 	console.log(profile[0].bones);
 }

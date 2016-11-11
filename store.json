@@ -1,5 +1,5 @@
-{	"indoor": [ 	
-		{
+{
+	"indoor": [{
 		"id": 1,
 		"title": "some name",
 		"thumnbail": "images/store/square_placeholder.png",
@@ -41,10 +41,8 @@
 		"image": "images/store/square_placeholder.png",
 		"owned": "false",
 		"cost": "0"
-		}]
-
-{	"outdoor": [ 	
-		{
+	}],
+	"outdoor": [{
 		"id": 1,
 		"title": "some name",
 		"thumnbail": "images/store/square_placeholder.png",
@@ -86,10 +84,8 @@
 		"image": "images/store/square_placeholder.png",
 		"owned": "false",
 		"cost": "0"
-		}]
-
-{	"furniture": [ 	
-		{
+	}],
+	"furniture": [{
 		"id": 1,
 		"title": "some name",
 		"thumnbail": "images/store/square_placeholder.png",
@@ -131,10 +127,8 @@
 		"image": "images/store/square_placeholder.png",
 		"owned": "false",
 		"cost": "0"
-		}]
-
-{	"toys": [ 	
-		{
+	}],
+	"toys": [{
 		"id": 1,
 		"title": "some name",
 		"thumnbail": "images/store/square_placeholder.png",
@@ -176,4 +170,5 @@
 		"image": "images/store/square_placeholder.png",
 		"owned": "false",
 		"cost": "0"
-		}]
+	}]
+}
