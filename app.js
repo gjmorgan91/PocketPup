@@ -49,6 +49,7 @@ if ('development' == app.get('env')) {
 app.get('/',login.view);
 app.get('/vote',vote.view);
 app.get('/vote/setIndex', vote.setIndex);
+app.post('/vote/giveBones', vote.giveBones);
 app.get('/activity',activity.view);
 app.get('/home',home.view);
 app.get('/store',store.view);

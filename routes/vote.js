@@ -1,12 +1,11 @@
-var projects = require('../voteData.json');
+var voters = require('../voteData.json');
+var profile = require('../profiles.json');
 
 var index = 1;
 
 exports.view = function(req, res) {
-	index = parseInt(projects[0].index);
-	console.log(index);
-	console.log(projects);
-	res.render('vote', projects[index]);
+	index = parseInt(voters[0].index);
+	res.render('vote', voters[index]);
 }
 
 exports.setIndex = function(req, res) {
@@ -14,5 +13,12 @@ exports.setIndex = function(req, res) {
 		index = 1
 	else
 		index++
-	projects[0].index = index.toString();
+	voters[0].index = index.toString();
+}
+
+exports.giveBones = function(req, res) {
+	parseInt(profile[0].bones);
+	parseInt(req.body.bones);
+	profile[0].bones = parseInt(profile[0].bones) + parseInt(req.body.boneValue);
+	console.log(profile[0].bones);
 }
