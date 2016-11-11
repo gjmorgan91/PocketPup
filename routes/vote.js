@@ -9,7 +9,7 @@ exports.view = function(req, res) {
 }
 
 exports.setIndex = function(req, res) {
-	if (index == 5)
+	if (index == 6)
 		index = 1
 	else
 		index++
