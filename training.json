@@ -1,0 +1,34 @@
+[{
+		"lessonNum": "1",
+		"lessonTitle": "Potty Training",
+		"lesson": "to be potty trained",
+		"breed": "Golden Retriever",
+		"age": "2",
+		"video": "https://www.youtube.com/embed/DaG-y2tFBFE",
+		"list1": "Step 1",
+		"list2": "Step 2",
+		"list3": "Step 3",
+		"list4": "Step 4"
+	},	{
+		"lessonNum": "2",
+		"lessonTitle": "Sitting and staying",
+		"lesson": "sit and stay",
+		"breed": "Golden Retriever",
+		"age": "2",
+		"video": "https://www.youtube.com/embed/WtD2GRbbyzU",
+		"list1": "Step 1",
+		"list2": "Step 2",
+		"list3": "Step 3",
+		"list4": "Step 4"
+	},	{
+		"lessonNum": "3",
+		"lessonTitle": "Fetching",
+		"lesson": "fetch",
+		"breed": "Golden Retriever",
+		"age": "2",
+		"video": "https://www.youtube.com/embed/hpmrfOOMjyA",
+		"list1": "Step 1",
+		"list2": "Step 2",
+		"list3": "Step 3",
+		"list4": "Step 4"
+	}]
