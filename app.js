@@ -15,11 +15,8 @@ var login = require('./routes/login');
 var vote = require('./routes/vote');
 var home = require('./routes/home');
 var store = require('./routes/store');
-<<<<<<< HEAD
 var locations = require('./routes/locations');
-=======
 var signup = require('./routes/signup');
->>>>>>> 40efe6bb2f5046906a55b8ba9487a63c7cf60840
 // Example route
 // var user = require('./routes/user');
 

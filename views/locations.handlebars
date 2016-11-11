@@ -21,14 +21,21 @@
 			<a href="store.handlebars" id="storeButton"><i class="fa fa-credit-card"></i></a>
 		</div>
 
-		{{#each location}}
-		<div>
-			<p class="locHeading" id="locName">{{locName}}</p>
-			<p class="locHeading" id="locRating">{{locRating}}</p>
-			<iframe class="locFrame" frameborder="0" style="border:0" src="{{locURL}}" width="80%" height="auto"></iframe>
+		<div class="buffer"></div>
+
+		{{#each locations}}
+		<div class="locationsNode">
+			<div class="locHeading">
+				<p id="locName">{{locName}}</p>
+				<p id="locRating">{{locRating}}</p>
+			</div>
+			<div>
+				<iframe src="{{locURL}}" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
 		</div>
 		{{/each}}
 
+		<div class="buffer"></div>
 
 		<div class="bar bottom">
 		  <a href="index.html"><i class="fa fa-home"></i></a> 
