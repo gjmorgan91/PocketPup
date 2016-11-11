@@ -1,0 +1,179 @@
+{	"indoor": [ 	
+		{
+		"id": 1,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 2,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 3,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 4,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 5,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 6,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+		}]
+
+{	"outdoor": [ 	
+		{
+		"id": 1,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 2,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 3,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 4,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 5,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 6,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+		}]
+
+{	"furniture": [ 	
+		{
+		"id": 1,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 2,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 3,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 4,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 5,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 6,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+		}]
+
+{	"toys": [ 	
+		{
+		"id": 1,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 2,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 3,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 4,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 5,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+	}, {
+		"id": 6,
+		"title": "some name",
+		"thumnbail": "images/store/square_placeholder.png",
+		"image": "images/store/square_placeholder.png",
+		"owned": "false",
+		"cost": "0"
+		}]

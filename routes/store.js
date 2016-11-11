@@ -1,4 +1,8 @@
+var storePage = require('../store.json');
+
+var page = JSON.parse(storePage.indoor);
 
 exports.view = function(req, res){
-    res.render('store');
+	// console.log(page.indoor);
+	// res.render('store', page.indoor);
 };
