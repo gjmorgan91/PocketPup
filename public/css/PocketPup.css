@@ -401,6 +401,7 @@ a#loginBtn{
 }
 
 /* Locations */
+
 .locFrame {
     position: absolute;
     width: 100%;
@@ -431,6 +432,7 @@ a#loginBtn{
 }
 
 /* Sign Up */
+
 .signupBox {
     padding: 5pt;
 }
@@ -483,4 +485,25 @@ a#loginBtn{
     top: 200pt;
     right: 50pt;
     color: darkgrey;
+}
+
+/* Activity Page */
+
+.goalHeader {
+    text-align:center;
+}
+
+        /*h1#lastheader{
+            margin-bottom:50pt;
+        }
+        progress#lastbar{
+
+            margin-bottom:50pt;
+        }*/
+
+.progress {
+    background-color: #f3f3f3;
+    border: 0;
+    height: 18px;
+    border-radius: 9px;
 }
