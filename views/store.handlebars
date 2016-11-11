@@ -31,26 +31,18 @@
 		</div>
 
 		<div class="storeContent">
-			<div #each store> 
-			<div id="storeTop">
-				<p class="itemIcon" id="iconOne"><img src="{{image}}" height="120" width="auto"></p>
-				<p class="itemIcon" id="iconTwo"><img src="{{image}}" height="120" width="auto"></p>
+			{{#each storePage}} 
+			<div id="storeLevel">
+				<p class="itemIcon" id="iconOne"><img src="{{image1}}" height="120" width="auto"></p>
+				<p class="itemIcon" id="iconTwo"><img src="{{image2}}" height="120" width="auto"></p>
 			</div>
-		</div /each>
-			<!-- <div id="storeMid">
-				<p class="itemIcon" id="iconThree"><img src="{{image}}" height="120" width="auto"></p>
-				<p class="itemIcon" id="iconFour"><img src="{{image}}" height="120" width="auto"></p>
-			</div>
-			<div id="storeBottom">
-				<p class="itemIcon" id="iconThree"><img src="{{image}}" height="120" width="auto"></p>
-				<p class="itemIcon" id="iconFour"><img src="{{image}}" height="120" width="auto"></p>
-			</div> -->
+			{{/each}}
 		</div>
 
-		<div id="arrowSpace">
+		<!-- <div id="arrowSpace">
 			<p id="leftArrow"><img src="images/store/left_arrow.png" width="50" height="auto"></p>
 			<p id="rightArrow"><img src="images/store/right_arrow.png" width="50" height="auto"></p>
-		</div>
+		</div> -->
 
 		<div class="buffer"></div>
 

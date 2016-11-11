@@ -373,8 +373,8 @@ a#loginBtn{
 }
 
 .storeContent {
-    margin-left: 30pt;
-    margin-right: 30pt;
+    margin-left: 20pt;
+    margin-right: 20pt;
     padding: 10pt;
     border-style: dashed;
     border-width: 2pt;
@@ -382,39 +382,37 @@ a#loginBtn{
     margin-bottom: 10pt;
 }
 
+.storeLevel {
+
+}
+
 .itemIcon {
-    margin: auto;
-    padding-left: 15pt;
-}
-
-#iconOne, #iconThree {
-    padding-left: 0pt;
-}
-
-#storeTop, #storeMid {
-    padding-bottom: 10pt;
+    
 }
 
 #iconOne, #iconTwo {
     display: inline;
-    padding-bottom: 10pt;
+    padding-left: 0pt;
 }
 
-#iconThree, #iconFour {
+#iconOne {
     display: inline;
-    margin: 0pt;
+}
+
+#iconTwo {
+    display: inline;
 }
 
 #arrowSpace {
     padding-top: 0pt;
 }
 
-#leftArrow, #rightArrow {
+/*#leftArrow, #rightArrow {
     display: inline;
     padding-left: 68pt;
     padding-top: 10pt;
     margin: auto;
-}
+}*/
 
 /* Locations */
 
