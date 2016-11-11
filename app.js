@@ -19,6 +19,7 @@ var locations = require('./routes/locations');
 var signup = require('./routes/signup');
 var activity = require('./routes/activity');
 var profile = require('./routes/profile');
+var training = require('./routes/training');
 // Example route
 // var user = require('./routes/user');
 
@@ -54,6 +55,7 @@ app.get('/store',store.view);
 app.get('/profile',profile.view);
 app.get('/locations',locations.view);
 app.get('/signup',signup.view);
+app.get('/training',training.view);
 app.get('/signup/getDog',signup.getDog);
 app.post('/signup/update',signup.update);
 app.post('/signup/updateProfile',signup.updateProfile);
