@@ -1,7 +1,7 @@
 var storePage = require('../store.json');
 var profile = require('../profiles.json');
 
-var page = JSON.parse(storePage.indoor);
+var page = JSON.parse(storePage.indoor[0]);
 
 exports.view = function(req, res){
 	// console.log(page.indoor);
