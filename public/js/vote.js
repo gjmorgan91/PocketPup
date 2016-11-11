@@ -14,14 +14,13 @@ function intializePage() {
 	$('#thumbsUp').hide();
 	$('.voteText').hide();
 	$('.voteSubmit').hide();
+	$('#voteReport').hide();
 }
 	
 function UpVote() {
 	if (like == true) {
-		console.log("Vote it Up");
-		$('#thumbsUp').fadeIn("fast");
-		$('#thumbsUp').fadeOut('fast');
-		$('#thumbsUp').hide();
+		$('#thumbsUp').fadeTo("slow", 1);
+		$('#thumbsUp').fadeTo("slow", 0);
 		like = false;
 		dislike = true;
 	}
@@ -34,10 +33,8 @@ function UpVote() {
 
 function DownVote() {
 	if (dislike == true) {
-		console.log("Vote it Down");
-		$('#thumbsDown').fadeIn("fast");
-		$('#thumbsDown').fadeOut("fast");
-		$('#thumbsDown').hide();
+		$('#thumbsDown').fadeTo("slow", 1);
+		$('#thumbsDown').fadeTo("slow", 0);
 		dislike = false;
 		like = true;
 	}
@@ -58,7 +55,6 @@ function showComment(event) {
 }
 
 function readySubmit() {
-	console.log("Clicked");
 	$.get("/vote/setIndex", nextItem());
 }
 
@@ -67,4 +63,6 @@ function nextItem(result) {
 }
 
 function reportThis(event) {
+		$('#voteReport').fadeTo("slow", 1);
+		$('#voteReport').fadeTo("slow", 0, function() {readySubmit();});
 }

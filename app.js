@@ -56,6 +56,7 @@ app.get('/profile',profile.view);
 app.get('/locations',locations.view);
 app.get('/signup',signup.view);
 app.get('/training',training.view);
+app.post('/training/setLesson',training.setLesson);
 app.get('/signup/getDog',signup.getDog);
 app.post('/signup/update',signup.update);
 app.post('/signup/updateProfile',signup.updateProfile);
