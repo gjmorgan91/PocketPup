@@ -11,7 +11,7 @@ exports.view = function(req, res) {
 
 exports.setIndex = function(req, res) {
 	if (index == 5)
-		index = 0
+		index = 1
 	else
 		index++
 	projects[0].index = index.toString();
