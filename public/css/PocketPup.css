@@ -507,19 +507,28 @@ a#loginBtn{
 
 .goalHeader {
     text-align:center;
+    background-color: white;
+    margin-right: 10pt;
 }
 
-        /*h1#lastheader{
-            margin-bottom:50pt;
-        }
-        progress#lastbar{
+.activitySection {
+    margin: 10pt;
+}
 
-            margin-bottom:50pt;
-        }*/
+.dailyGoals, .weeklyGoals {
+    border-style: solid;
+    border-width: 1pt;
+    padding-left: 10pt;
+    padding-bottom: 0pt;
+    margin-bottom: 20pt;
+    background-color: lightgrey;
+}
 
 .progress {
     background-color: #f3f3f3;
+    padding-left: 10pt;
     border: 0;
     height: 18px;
+    width: 80%;
     border-radius: 9px;
 }
