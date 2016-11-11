@@ -98,27 +98,6 @@ document.getElementById("time2").innerHTML = Date();
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
-
-	<style>
-		h1{
-			text-align:center;
-			margin-top:50pt;
-		}
-		h1#lastheader{
-			margin-bottom:50pt;
-		}
-		progress#lastbar{
-
-			margin-bottom:50pt;
-		}
-		progress {
-		  background-color: #f3f3f3;
-		  border: 0;
-		  height: 18px;
-		  border-radius: 9px;
-		}
-	</style>
-
 	<body>
 
 
@@ -128,28 +107,33 @@ document.getElementById("time2").innerHTML = Date();
 			<a href="store" id="storeButton"><i class="fa fa-credit-card"></i></a>
 		</div>
 
-		<div>
-			<h1>Daily Goals</h1>
-				<h3>Feed</h3>
-				<p>Training</p>
-				<progress value="95" max="100"></progress> 
-				<h3>Clean-up After</h3>
-				<progress value="65" max="100"></progress>
-				<h3>Outside</h3>
-				<progress value="48" max="100"></progress>
-				<h3>Other</h3>
-				<progress value="72" max="100"></progress>
+		<div class="buffer"></div>
+
+		<div class="activitySection">
+			<div class="dailyGoals">
+				<h1 class="goalHeader">Daily Goals</h1>
+					<h3>Feed</h3>
+					<progress class="progress" value="95" max="100"></progress> 
+					<h3>Clean-up After</h3>
+					<progress class="progress" value="65" max="100"></progress>
+					<h3>Outside</h3>
+					<progress class="progress" value="48" max="100"></progress>
+					<h3>Other</h3>
+					<progress class="progress" value="72" max="100"></progress>
+			</div>
+
+			<div class="weeklyGoals">
+				<h1 class="goalHeader">Weekly Goals</h1>
+					<h3>Feed</h3>
+					<progress class="progress" value="100" max="100"></progress>
+					<h3>Clean-up After</h3>
+					<progress class="progress" value="50" max="100"></progress>
+					<h3>Outside</h3>
+					<progress class="progress" value="25" max="100"></progress>
+			</div>
 		</div>
 
-		<div>
-			<h1>Weekly Goals</h1>
-				<h3>Feed</h3>
-				<progress value="100" max="100"></progress>
-				<h3>Clean-up After</h3>
-				<progress value="50" max="100"></progress>
-				<h3 id="lastheader">Outside</h3>
-				<progress id="lastbar" value="25" max="100"></progress>
-		</div>
+	<div class="buffer"></div>
 
 		<div class="bar bottom">
 		  <a href="home"><i class="fa fa-home"></i></a> 
