@@ -6,7 +6,7 @@ var currStore = 0;
 exports.view = function(req, res) {
 	// var currStoreItems = JSON.parse({storePage:storePage});
 	console.log({storePage:storePage});
-	res.render('store', {storePage:storePage});
+	res.render('store', storePage[0]);
 }
 
 /*exports.view = function(req, res){

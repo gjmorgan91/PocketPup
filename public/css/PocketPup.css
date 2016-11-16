@@ -382,29 +382,20 @@ a#loginBtn{
     margin-bottom: 10pt;
 }
 
-.storeLevel {
-
+#topLevel, #midLevel {
+    margin-bottom: 20pt;
 }
 
-.itemIcon {
-    
+#iconTwo, #iconFour, #iconSix {
+    margin-left: 20pt;
 }
 
-#iconOne, #iconTwo {
+#iconOne, #iconThree, #iconFive {
+    margin-left: 5pt;
+}
+
+#iconOne, #iconTwo, #iconThree, #iconFour, #iconFive, #iconSix {
     display: inline;
-    padding-left: 0pt;
-}
-
-#iconOne {
-    display: inline;
-}
-
-#iconTwo {
-    display: inline;
-}
-
-#arrowSpace {
-    padding-top: 0pt;
 }
 
 /*#leftArrow, #rightArrow {

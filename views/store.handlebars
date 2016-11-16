@@ -15,7 +15,7 @@
 	<body>
 
 		<div class="bar top">
-			<a href="activity" id="actButton"><i class="fa fa-book"></i></a>
+			<a href="activity" id="actButton"><i class="fa fa-bar-chart"></i></a>
 			<p class="pageTitle">Store</p>
 			<a href="store" class="active top bones" id="storeButton">{{cashmonkey}} <i class="fa fa-credit-card"></i></a>
 		</div>
@@ -30,13 +30,19 @@
 			<p class="" id="toys"><i class="fa fa-futbol-o"></i></p>
 		</div>
 
-		<div class="storeContent">
-			{{#each storePage}} 
-			<div id="storeLevel">
+		<div class="storeContent"> 
+			<div class="storeLevel" id="topLevel">
 				<p class="itemIcon" id="iconOne"><img src="{{image1}}" height="120" width="auto"></p>
 				<p class="itemIcon" id="iconTwo"><img src="{{image2}}" height="120" width="auto"></p>
 			</div>
-			{{/each}}
+			<div class="storeLevel" id="midLevel">
+				<p class="itemIcon" id="iconThree"><img src="{{image3}}" height="120" width="auto"></p>
+				<p class="itemIcon" id="iconFour"><img src="{{image4}}" height="120" width="auto"></p>
+			</div>
+			<div class="storeLevel" id="bottomLevel">
+				<p class="itemIcon" id="iconFive"><img src="{{image5}}" height="120" width="auto"></p>
+				<p class="itemIcon" id="iconSix"><img src="{{image6}}" height="120" width="auto"></p>
+			</div>
 		</div>
 
 		<!-- <div id="arrowSpace">
