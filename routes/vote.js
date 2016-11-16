@@ -2,6 +2,7 @@ var voters = require('../voteData.json');
 var profile = require('../profiles.json');
 
 var index = 2;
+var prevIndex = 0;
 
 exports.view = function(req, res) {
 	index = parseInt(voters[0].index);
