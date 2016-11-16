@@ -9,8 +9,8 @@
 		"weeklyFeeding": "4",
 		"dailyCleanUp": "1",
 		"weeklyCleanUp": "8",
-		"dailyOutsideTime": "",
-		"weeklyOutsideTime": "0",
-		"dailySocialTime": "0",
-		"weeklySocialTime": "0"
+		"dailyOutsideTime": "20",
+		"weeklyOutsideTime": "300",
+		"dailySocialTime": "27",
+		"weeklySocialTime": "120"
 	}]
