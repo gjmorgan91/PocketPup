@@ -24,6 +24,7 @@ function UpVote() {
 		$('#thumbsUp').fadeTo("slow", 0);
 		like = false;
 		dislike = true;
+		$('#thumbsUp').setActive;
 	}
 	if (submitThis == false) {
 		submitThis = true;
@@ -56,9 +57,11 @@ function showComment(event) {
 }
 
 function readySubmit() {
-	$('.voteSubmit').text("+10 Bones");
-	$.post("/vote/giveBones", {"boneValue": boneValue});
-	$.get("/vote/setIndex", nextItem());
+	if (submitReady == true) {
+		$('.voteSubmit').text("+10 Bones");
+		$.post("/vote/giveBones", {"boneValue": boneValue});
+		$.get("/vote/setIndex", nextItem());
+	}
 }
 
 function nextItem(result) {

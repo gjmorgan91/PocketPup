@@ -4,5 +4,13 @@
 		"breed": "Golden Retriever",
 		"age": "2",
 		"avatar": "images/dogs/swarley.png",
-		"cashmonkey": "2000"
+		"cashmonkey": "2000",
+		"dailyFeeding": "2",
+		"weeklyFeeding": "4",
+		"dailyCleanUp": "1",
+		"weeklyCleanUp": "8",
+		"dailyOutsideTime": "",
+		"weeklyOutsideTime": "0",
+		"dailySocialTime": "0",
+		"weeklySocialTime": "0"
 	}]

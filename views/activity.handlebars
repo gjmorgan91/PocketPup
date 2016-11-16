@@ -1,93 +1,5 @@
 <!doctype html>
-<!-- 
-<html>
 
-<head>
-<title>Activity</title>
-<link href="css/PocketPup.css" rel="stylesheet">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<style>
-h1{
-	margin-top:50pt;
-	text-align:center;
-}
-h3{
-	text-align:center;
-}
-img#swarleypic{
-	margin-left:100pt;
-}
-img#swarleytraining{
-	margin-bottom:50pt;
-}
-p#time1{
-	text-align:center;
-}
-p#time2{
-	text-align:center;
-}
-
-i#up{
-	margin-left:100pt;
-}
-i#down{
-	margin-left:20pt;
-}
-</style>
-
-<body>
-<div class="bar top">
-<a href="activity.html" id="actButton" class="active top"><i class="fa fa-book"></i></a>
-<p class="pageTitle">Activity</p>
-<a href="store.html" id="storeButton"><i class="fa fa-credit-card"></i></a>
-
-</div>
-
-<h1>
-	Swarley
-</h1>
-
-<img id="swarleypic" src="images/dogs/swarley.png" alt="pic_of_swarley">
-
-<h3>The last time you fed Swarley was:
-</h3>
-<p id="time1"></p>
-<h3>The last time you walked Swarley was:
-	</h3>
-<p id="time2"></p>
-
-<h3>
-	Here's what users thought of Swarley's training!
-	</h3>
-<div>
-<p> <i id="up" class="fa fa-thumbs-o-up" aria-hidden="true"></i>131
-	<i id="down" class="fa fa-thumbs-o-down" aria-hidden="true"></i> 3</p>
-</div>
-
-<center>
-<img id="swarleytraining" src="images/vote/vote_placeholder.JPG" alt="Swarley_training" height="220.5" width="350">
-</center>
-
-<script>
-document.getElementById("time1").innerHTML = Date();
-document.getElementById("time2").innerHTML = Date();
-</script>
-
-
-<div class="bar bottom">
-  <a href="index.html"><i class="fa fa-home"></i></a> 
-  <a href="locations.html"><i class="fa fa-map-marker"></i></a> 
-  <a href="training.html"><i class="fa fa-paw"></i></a> 
-<a href="vote.html"><i class="fa fa-check-square-o"></i></a>
-</div>
-</body>
-</html>
--->
 <html>
 	<head>
 		<title>Activity</title>
@@ -113,25 +25,25 @@ document.getElementById("time2").innerHTML = Date();
 			<div class="dailyGoals">
 				<h1 class="goalHeader">Daily Goals</h1>
 					<h3>Feed</h3>
-					<progress class="progress" value="50" max="100"></progress> 
+					<progress class="progress" value={{dailyFeeding}} max="2"></progress> 
 					<h3>Clean-up After</h3>
-					<progress class="progress" value="66" max="100"></progress>
+					<progress class="progress" value={{dailyCleanUp}} max="4"></progress>
 					<h3>Outside</h3>
-					<progress class="progress" value="48" max="100"></progress>
+					<progress class="progress" value={{dailyOutsideTime}} max="100"></progress>
 					<h3>Social Time</h3>
-					<progress class="progress" value="72" max="100"></progress>
+					<progress class="progress" value={{dailySocialTime}} max="100"></progress>
 			</div>
 
 			<div class="weeklyGoals">
 				<h1 class="goalHeader">Weekly Goals</h1>
 					<h3>Feed</h3>
-					<progress class="progress" value="100" max="100"></progress>
+					<progress class="progress" value={{weeklyFeeding}} max="14"></progress>
 					<h3>Clean-up After</h3>
-					<progress class="progress" value="50" max="100"></progress>
+					<progress class="progress" value={{weeklyCleanUp}} max="28"></progress>
 					<h3>Outside</h3>
-					<progress class="progress" value="25" max="100"></progress>
+					<progress class="progress" value={{weeklyOutsideTime}} max="100"></progress>
 					<h3>Social Time</h3>
-					<progress class="progress" value="40" max="100"></progress>
+					<progress class="progress" value={{weeklySocialTime}} max="100"></progress>
 			</div>
 		</div>
 
