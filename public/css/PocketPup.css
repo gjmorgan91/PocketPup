@@ -171,8 +171,8 @@
     margin: auto;
     border: 10px solid;
     border-color: #b8c492;
-    width: 80%;
-    height: 80%;
+    width: 95%;
+    height: 250pt;
 }
 
 #thumbsUp {
@@ -397,13 +397,6 @@ a#loginBtn{
 #iconOne, #iconTwo, #iconThree, #iconFour, #iconFive, #iconSix {
     display: inline;
 }
-
-/*#leftArrow, #rightArrow {
-    display: inline;
-    padding-left: 68pt;
-    padding-top: 10pt;
-    margin: auto;
-}*/
 
 /* Locations */
 

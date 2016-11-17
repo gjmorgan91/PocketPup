@@ -1,6 +1,5 @@
 var like = true;
 var dislike = true;
-var inputGiven = false;
 var submitThis = false;
 var submitReady = false;
 var boneValue = 10;
@@ -69,6 +68,7 @@ function nextItem(result) {
 }
 
 function reportThis(event) {
+		submitReady = true;
 		$('#voteReport').fadeTo("slow", 1);
 		$('#voteReport').fadeTo("slow", 0, function() {readySubmit();});
 }
