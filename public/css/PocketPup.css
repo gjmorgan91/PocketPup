@@ -94,12 +94,16 @@
 
 /* Home Screen */
 
-#background {
+.background {
 	position: absolute;
 	padding-top: 35pt;
 	height: 92%;
 	width: 100%;
 	z-index: -3;
+}
+
+.background.false {
+    display: none;
 }
 
 .dog {
@@ -488,11 +492,10 @@ a#loginBtn{
 .storeContent {
     margin-left: 20pt;
     margin-right: 20pt;
-    padding: 10pt;
+    padding: 15pt;
     border-style: dashed;
     border-width: 2pt;
     background-color: lightgrey;
-    margin-bottom: 10pt;
 }
 
 #topLevel, #midLevel {
@@ -509,6 +512,36 @@ a#loginBtn{
 
 #iconOne, #iconTwo, #iconThree, #iconFour, #iconFive, #iconSix {
     display: inline;
+}
+
+#title1 {
+    position: absolute;
+    left: 40pt;
+}
+
+#title2 {
+    position: absolute;
+    right: 50pt;
+}
+
+#title3 {
+    position: absolute;
+    left: 40pt;
+}
+
+#title4 {
+    position: absolute;
+    right: 60pt;
+}
+
+#title5 {
+    position: absolute;
+    left: 40pt; 
+}
+
+#title6 {
+    position: absolute;
+    right: 70pt;   
 }
 
 /* Locations */

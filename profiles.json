@@ -12,5 +12,18 @@
 		"dailyOutsideTime": "20",
 		"weeklyOutsideTime": "300",
 		"dailySocialTime": "27",
-		"weeklySocialTime": "120"
+		"weeklySocialTime": "120",
+		"painting": "false",
+		"shelfDecos": "false",
+		"tv": "false",
+		"backpack": "false",
+		"bowl_empty": "images/items/bowl_empty.png",
+		"bowl_full": "images/items/bowl_full.png",
+		"mystery": "false",
+		"alcohol": "false",
+		"flowers": "false",
+		"orangepot": "false",
+		"rug": "false",
+		"stump": "false",
+		"yellowPot": "false"
 	}]

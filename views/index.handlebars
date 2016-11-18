@@ -24,15 +24,26 @@
 		</div>
 
 		<div class="content">
-			<img id="background" src="images/bg1.png"></img>
+			<img class="background" id="background" src="images/bg1.png"></img>
+			<img class="background inside {{painting}}" id="painting" src="images/items/inside/painting.png"></img>
+			<img class="background inside {{shelfDecos}}"  id="shelfDeco" src="images/items/inside/shelfDeco.png"></img>
+			<img class="background inside {{tv}}" id="tv" src="images/items/inside/tv.png"></img>
+			<img class="background inside {{backpack}}" id="backpack" src="images/items/inside/backpack.png"></img>
+			<img class="background inside {{mystery}}" id="mystery" src="images/items/inside/mystery.png"></img>
+			<img class="background outside {{alcohol}}" id="alcohol" src="images/items/outside/alcohol.png"></img>
+			<img class="background outside {{flowers}}" id="flowers" src="images/items/outside/flowers.png"></img>
+			<img class="background outside {{orangepot}}" id="orangepot" src="images/items/outside/orangepot.png"></img>
+			<img class="background outside {{rug}}" id="rug" src="images/items/outside/rug.png"></img>
+			<img class="background outside {{stump}}" id="stump" src="images/items/outside/stump.png"></img>
+			<img class="background outside {{yellowPot}}" id="yellowPot" src="images/items/outside/yellowPot.png"></img>
 			<a href="profile" class="dog" id="currDog"><img id="dogImg" src="{{avatar}}"></i></a>
 			<div id="bowlIndoors">
-				<img class="bowl1" id="bowlEmpty1" onclick="updateFood()" src="/images/items/bowl_empty.png"></img>
-				<img class="bowl1" id="bowlFull1" onclick="updateFood()" src="/images/items/bowl_full.png"></img>
+				<img class="bowl1" id="bowlEmpty1" onclick="updateFood()" src="{{bowl_empty}}"></img>
+				<img class="bowl1" id="bowlFull1" onclick="updateFood()" src="{{bowl_full}}"></img>
 			</div>
 			<div id="bowlOutdoors">
-				<img class="bowl2" id="bowlEmpty2" onclick="updateFood()" src="/images/bowl_empty.png"></img>
-				<img class="bowl2" id="bowlFull2" onclick="updateFood()" src="/images/bowl_full.png"></img>
+				<img class="bowl2" id="bowlEmpty2" onclick="updateFood()" src="{{bowl_empty}}"></img>
+				<img class="bowl2" id="bowlFull2" onclick="updateFood()" src="{{bowl_full}}"></img>
 			</div>
 
 			<div class="popup1" onclick="myFunction1()">

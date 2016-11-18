@@ -7,6 +7,9 @@
 		<link href="css/PocketPup.css" rel="stylesheet">
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/bootstrap-theme.css" rel="stylesheet">
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="js/store.js"></script>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
@@ -23,25 +26,28 @@
 		<div class="buffer"></div>
 
 		<div class="storeMenu">
-			<p class="" id="indoor"><i class="fa fa-home"></i></p>
-			<p class="" id="outdoor"><i class="fa fa-tree"></i></p>
-			<p class="" id="furniture"><i class="fa fa-tv"></i></p>
-			<p class="" id="accessories"><i class="fa fa-diamond"></i></p>
-			<p class="" id="toys"><i class="fa fa-futbol-o"></i></p>
+			<p id="indoor" onclick="indoorStore()"><i class="fa fa-home"></i></p>
+			<p id="outdoor" onclick="outdoorStore()"><i class="fa fa-tree"></i></p>
 		</div>
 
 		<div class="storeContent"> 
 			<div class="storeLevel" id="topLevel">
-				<p class="itemIcon" id="iconOne"><img src="{{image1}}" height="120" width="auto"></p>
-				<p class="itemIcon" id="iconTwo"><img src="{{image2}}" height="120" width="auto"></p>
+				<p class="itemIcon" id="iconOne" onclick="buy1()"><img class="{{owned1}}" src="{{image1}}" height="120" width="auto"></p>
+				<p class="title" id="title1">{{title1}}  {{cost1}}</p>
+				<p class="itemIcon" id="iconTwo" onclick="buy2()"><img class="{{owned2}}" src="{{image2}}" height="120" width="auto"></p>
+				<p class="title" id="title2">{{title2}}  {{cost2}}</p>
 			</div>
 			<div class="storeLevel" id="midLevel">
-				<p class="itemIcon" id="iconThree"><img src="{{image3}}" height="120" width="auto"></p>
-				<p class="itemIcon" id="iconFour"><img src="{{image4}}" height="120" width="auto"></p>
+				<p class="itemIcon" id="iconThree" onclick="buy3()"><img class="{{owned3}}" src="{{image3}}" height="120" width="auto"></p>
+				<p class="title" id="title3">{{title3}}  {{cost3}}</p>
+				<p class="itemIcon" id="iconFour" onclick="buy4()"><img class="{{owned4}}" src="{{image4}}" height="120" width="auto"></p>
+				<p class="title" id="title4">{{title4}}  {{cost4}}</p>
 			</div>
 			<div class="storeLevel" id="bottomLevel">
-				<p class="itemIcon" id="iconFive"><img src="{{image5}}" height="120" width="auto"></p>
-				<p class="itemIcon" id="iconSix"><img src="{{image6}}" height="120" width="auto"></p>
+				<p class="itemIcon" id="iconFive" onclick="buy5()"><img class="{{owned5}}" src="{{image5}}" height="120" width="auto"></p>
+				<p class="title" id="title5">{{title5}}  {{cost5}}</p>
+				<p class="itemIcon" id="iconSix" onclick="buy6()"><img class="{{owned6}}" src="{{image6}}" height="120" width="auto"></p>
+				<p class="title" id="title6">{{title6}}  {{cost6}}</p>
 			</div>
 		</div>
 
