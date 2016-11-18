@@ -1,4 +1,4 @@
-var storePage = require('../store2.json');
+var storePage = require('../store.json');
 var profile = require('../profiles.json');
 
 var currStore = 0;
