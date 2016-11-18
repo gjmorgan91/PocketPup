@@ -8,6 +8,7 @@ var popupShow2 = false;
 var inside = true;
 
  $(document).ready(function() {
+    $(".outside").hide();
  	$('#bowlOutdoors').hide();
  	if (amHungry == false) {
  		$('#bowlEmpty1').hide();
@@ -24,6 +25,8 @@ function BGChange() {
     document.getElementById("background").src = 'images/bg2.png';
     $('#outside').hide("fast");
     $('#inside').show("fast");
+    $(".inside.true").hide();
+    $(".outside.true").show();
     $('#bowlIndoors').hide();
     $('#bowlOutdoors').show();
     if (popupShow1 == true) {
@@ -38,6 +41,8 @@ function BGChangeBack() {
     document.getElementById("background").src = 'images/bg1.png';
     $('#outside').show("fast");
     $('#inside').hide("fast");
+    $(".inside.true").show();
+    $(".outside.true").hide();
     $('#bowlIndoors').show();
     $('#bowlOutdoors').hide();
     if (popupShow2 == true) {
