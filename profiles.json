@@ -5,6 +5,7 @@
 		"age": "2",
 		"avatar": "images/dogs/swarley.png",
 		"cashmonkey": "2000",
+		"background": "images/bg1.png",
 		"dailyFeeding": "2",
 		"weeklyFeeding": "4",
 		"dailyCleanUp": "1",

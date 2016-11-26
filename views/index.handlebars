@@ -24,7 +24,7 @@
 		</div>
 
 		<div class="content">
-			<img class="background" id="background" src="images/bg1.png"></img>
+			<img class="background" id="background" src="{{background}}"></img>
 			<img class="background inside {{painting}}" id="painting" src="images/items/inside/painting.png"></img>
 			<img class="background inside {{shelfDecos}}"  id="shelfDeco" src="images/items/inside/shelfDeco.png"></img>
 			<img class="background inside {{tv}}" id="tv" src="images/items/inside/tv.png"></img>
@@ -72,6 +72,7 @@
 
   		ga('create', 'UA-87290080-1', 'auto');
   		ga('send', 'pageview');
+  		ga('send', 'event', 'currDog', 'click');
 
 	</script>
 </html>
