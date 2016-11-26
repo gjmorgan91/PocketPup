@@ -45,30 +45,30 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/',login.view);
-app.get('/vote',vote.view);
+app.get('/', login.view);
+app.get('/vote', vote.view);
 app.get('/vote/setIndex', vote.setIndex);
 app.post('/vote/giveBones', vote.giveBones);
-app.get('/activity',activity.view);
-app.get('/home',home.view);
-app.get('/test',home.view2);
-app.get('/store',store.view);
-app.get('/store/indoors',store.indoors);
-app.get('/store/outdoors',store.outdoors);
-app.get('/store/buy1',store.buy1);
-app.get('/store/buy2',store.buy2);
-app.get('/store/buy3',store.buy3);
-app.get('/store/buy4',store.buy4);
-app.get('/store/buy5',store.buy5);
-app.get('/store/buy6',store.buy6);
-app.get('/profile',profile.view);
-app.get('/locations',locations.view);
-app.get('/signup',signup.view);
-app.get('/training',training.view);
-app.post('/training/setLesson',training.setLesson);
-app.get('/signup/getDog',signup.getDog);
-app.post('/signup/update',signup.update);
-app.post('/signup/updateProfile',signup.updateProfile);
+app.get('/activity', activity.view);
+app.get('/home', home.view);
+// app.get('/test', home.view2);
+app.get('/store', store.view);
+app.get('/store/indoors', store.indoors);
+app.get('/store/outdoors', store.outdoors);
+app.get('/store/buy1', store.buy1);
+app.get('/store/buy2', store.buy2);
+app.get('/store/buy3', store.buy3);
+app.get('/store/buy4', store.buy4);
+app.get('/store/buy5', store.buy5);
+app.get('/store/buy6', store.buy6);
+app.get('/profile', profile.view);
+app.get('/locations', locations.view);
+app.get('/signup', signup.view);
+app.get('/training', training.view);
+app.post('/training/setLesson', training.setLesson);
+app.get('/signup/getDog', signup.getDog);
+app.post('/signup/update', signup.update);
+app.post('/signup/updateProfile', signup.updateProfile);
 
 // Example route
 // app.get('/users', user.list);
