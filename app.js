@@ -14,7 +14,6 @@ var handlebars = require('express3-handlebars');
 var login = require('./routes/login');
 var vote = require('./routes/vote');
 var home = require('./routes/home');
-var hometest = require('./routes/hometest');
 var store = require('./routes/store');
 var locations = require('./routes/locations');
 var signup = require('./routes/signup');
