@@ -10,4 +10,3 @@ exports.view2 = function(req, res){
 	profile[0].background = profiletest.background;
     res.render('index', profile[0]);
 };
-}

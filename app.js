@@ -51,7 +51,7 @@ app.get('/vote/setIndex', vote.setIndex);
 app.post('/vote/giveBones', vote.giveBones);
 app.get('/activity', activity.view);
 app.get('/home', home.view);
-// app.get('/test', home.view2);
+app.get('/test', home.view2);
 app.get('/store', store.view);
 app.get('/store/indoors', store.indoors);
 app.get('/store/outdoors', store.outdoors);
