@@ -1,5 +1,17 @@
 	[	{"index": "2"
 	},	{"cashmonkey": "0"
+	}, {
+		"cashmonkey": "6",
+		"ownName": "Don Norman",
+		"dogName": "Milo",
+		"topicName": "Climbing Stairs",
+		"image": "https://www.youtube.com/embed/mtIuFToHwUI",
+		"likes": "0",
+		"dislikes": "0",
+		"totalCount": "0",
+		"commentCount": "0",
+		"comment0": "null",
+		"report": "0"
 	}, 	{
 		"cashmonkey": "1",
 		"ownName": "Greg Morgan",
@@ -54,18 +66,6 @@
 		"dogName": "Joey",
 		"topicName": "Speaking",
 		"image": "https://www.youtube.com/embed/LH9v-FWY4oU",
-		"likes": "0",
-		"dislikes": "0",
-		"totalCount": "0",
-		"commentCount": "0",
-		"comment0": "null",
-		"report": "0"
-	}, {
-		"cashmonkey": "6",
-		"ownName": "Ross Draws",
-		"dogName": "Milo",
-		"topicName": "Climbing Stairs",
-		"image": "https://www.youtube.com/embed/mtIuFToHwUI",
 		"likes": "0",
 		"dislikes": "0",
 		"totalCount": "0",
