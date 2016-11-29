@@ -5,6 +5,7 @@ var hour = null;
 var date = null;
 var popupShow1 = false;
 var popupShow2 = false;
+var popupShow3 = false;
 var inside = true;
 
  $(document).ready(function() {
@@ -90,4 +91,17 @@ function myFunction2() {
     } else {
     	popupShow2 = false;
     }
+}
+
+function myFunction3() {
+    $('#poop').hide();
+    console.log("Im pooping");
+    var popup = document.getElementById('myPopup3');
+    popup.classList.toggle('show');
+    if (popupShow3 == false) {
+        popupShow3 = true;
+    } else {
+        popupShow3 = false;
+    }
+    $.post("/home/hidepoop", function() {});
 }
