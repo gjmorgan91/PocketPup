@@ -69,6 +69,8 @@ app.post('/training/setLesson', training.setLesson);
 app.get('/signup/getDog', signup.getDog);
 app.post('/signup/update', signup.update);
 app.post('/signup/updateProfile', signup.updateProfile);
+app.post('/home/hidepoop', home.hidePoop);
+app.post('/locations/poop', home.showPoop)
 
 // Example route
 // app.get('/users', user.list);
