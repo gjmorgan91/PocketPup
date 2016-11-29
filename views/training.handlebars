@@ -17,9 +17,12 @@
 
   <style>
       textarea#comment{
-        text-align:center;
+        text-align:left;
         margin-bottom:40pt;
         border-color: black;
+      }
+      #trainingText {
+        background: lightgrey;
       }
   </style>
 
@@ -42,7 +45,7 @@
 
       <div class="buffer"></div>
 
-      <div class="dropdown" align="center">
+      <div class="dropdown" align="left">
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">{{lessonNum}}. {{lessonTitle}}<span class="caret"></span></button>
         <div class="dropdown-menu">
           <ol>
@@ -58,12 +61,17 @@
 
         <h5 align="center" padding-left="5" padding-right="5">Getting your {{age}}-year-old {{breed}} to {{lesson}}.</h5>
 
+        <div id="trainingText">
         <ol>
       	   <li>{{list1}}</li>
       	   <li>{{list2}}</li>
            <li>{{list3}}</li>
            <li>{{list4}}</li>
+           <li>{{list5}}</li>
+           <li>{{list6}}</li>
+           <li>{{list7}}</li>
         </ol>
+        </div>
 
         <h3 align="center">Video Demonstration</h3>
 
