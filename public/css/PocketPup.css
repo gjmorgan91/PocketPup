@@ -108,8 +108,8 @@
 
 .dog {
     position: absolute;
-    bottom: 130pt;
-    left: 90pt;
+    bottom: 150pt;
+    left: 60pt;
 }
 
 .btn#outside {
@@ -161,6 +161,14 @@
     z-index; 2;
     right: 51%;
     top: 81%;
+}
+
+#poop {
+    position: absolute;
+    bottom: 100pt;
+    right: 60pt;
+    width: 60px;
+    height: auto;
 }
 
 /* Popup container */
