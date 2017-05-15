@@ -1,0 +1,720 @@
+/* General */
+.bar {
+	position: fixed;
+	height: 8%;
+	min-height: 35pt;
+	border-color: grey;
+	width: 100%;
+    text-align: center;
+    background-color: #bebebe;
+    overflow: auto;
+    z-index: 2;
+}
+
+
+.top {
+	border-bottom: 1pt;
+	border-bottom-style: inset;
+	top: 0;
+    display: inline;
+}
+
+.bottom {
+    border-top: 1pt;
+    border-top-style: inset;
+    bottom: 0;
+}
+
+.bar.bottom a {
+    width: 25%;
+    padding-top: 2pt;
+    padding-bottom:2pt;
+    float: left;
+    transition: all 0.3s ease;
+    color: #737373;
+    font-size: 24pt;
+}
+
+.pageTitle {
+	text-align: center;
+	font-size: 24pt;
+	color: #737373;
+	display:inline;
+    padding-top: 8pt;
+    padding-bottom: 8pt
+}
+
+.bones#storeButton {
+    width: 24%;
+}
+
+#actButton {
+	position: fixed;
+	left: 0;
+    width: 10%;
+    height: 8%;
+    transition: all 0.3s ease;
+    color: #737373;
+    font-size: 16pt;
+    padding-top: 8pt;
+    padding-bottom: 8pt
+}
+
+#storeButton {
+	position: fixed;
+	right: 0;
+    width: 10%;
+    height: 8%;
+    padding-top: 8pt;
+    padding-bottom:5pt;
+    transition: all 0.3s ease;
+    color: #737373;
+    font-size: 16pt;
+}
+
+.bar a:hover {
+    background-color: #d9d9d9;
+}
+
+.active.top {
+    background-color: #b8c492;
+    height:100%;
+    border-bottom: 1pt;
+    border-color: none;
+    border-bottom-style: inset;
+}
+
+.active.bottom {
+    background-color: #b8c492;
+    height:100%;
+    border-top: 1pt;
+    border-color: none;
+    border-top-style: inset;
+}
+
+/* Home Screen */
+
+.background {
+	position: absolute;
+	padding-top: 35pt;
+	height: 92%;
+	width: 100%;
+	z-index: -3;
+}
+
+.background.false {
+    display: none;
+}
+
+#poop.false {
+    display: none;
+}
+
+.dog {
+    position: absolute;
+    bottom: 150pt;
+    left: 60pt;
+}
+
+.btn#outside {
+	position: absolute;
+	bottom: 40pt;
+	right: 0pt;
+	color: white;
+	text-shadow: 1pt 1pt 5pt #000;
+}
+
+.btn#inside {
+	position: absolute;
+	bottom: 40pt;
+	left: 0pt;
+	color: white;
+	text-shadow: 1pt 1pt 5pt #000;
+}
+
+.btn#nextDog {
+    position: absolute;
+    top: 40pt;
+    right: 0pt;
+    color: white;
+    text-shadow: 1pt 1pt 5pt #000;
+}
+
+.btn#loginBttn {
+    position: absolute;
+    font-size: 14pt;
+    top: 40pt;
+    left: 0pt;
+    color: white;
+    text-shadow: 1pt 1pt 5pt #000;
+}
+
+.bowl1 {
+    height: 5%;
+    width: auto;
+    position: absolute;
+    z-index; 2;
+    right: 17%;
+    top: 42%;
+}
+
+.bowl2 {
+    height: 5%;
+    width: auto;
+    position: absolute;
+    z-index; 2;
+    right: 51%;
+    top: 81%;
+}
+
+#poop {
+    position: absolute;
+    bottom: 100pt;
+    right: 60pt;
+    width: 60px;
+    height: auto;
+}
+
+/* Popup container */
+.popup1 {
+    top: 40%;
+    right: 27%;
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup2 {
+    top: 80%;
+    right: 60%;
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup3 {
+    top: 75%;
+    right: 30%;
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup1 .popuptext1{
+    visibility: hidden;
+    width: 160px;
+    background-color: #8a995c;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popup2 .popuptext2{
+    visibility: hidden;
+    width: 160px;
+    background-color: #8a995c;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popup3 .popuptext3{
+    visibility: hidden;
+    width: 160px;
+    background-color: #8a995c;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup1 .popuptext1::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #8a995c transparent transparent transparent;
+}
+
+.popup2 .popuptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #8a995c transparent transparent transparent;
+}
+
+.popup3 .popuptext3::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #8a995c transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup1 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+.popup2 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+.popup3 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/*Vote page*/  
+
+.voteInfo {
+    text-align: center;
+    width: 100%;
+}
+
+.voteButton {
+    display: inline;
+    width: 100%;
+    padding-left: 40pt;
+    font-size: 20pt;
+}
+
+#owner {
+    display: inline;}
+
+#pet {
+    display: inline;
+}
+
+#topic {
+    text-align: center;
+}
+
+#pupPic {
+    display: block;
+    margin: auto;
+    border: 10px solid;
+    border-color: #b8c492;
+    width: 95%;
+    height: 250pt;
+}
+
+#thumbsUp {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    color: white;
+    top: 180px;
+    width: 100%;
+    z-index; -1;
+    font-size: 150pt;
+}
+
+#thumbsDown {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    color: white;
+    top: 180px;
+    width: 100%;
+    z-index; -1;
+    font-size: 150pt;
+}
+
+#voteReport {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    color: white;
+    top: 180px;
+    width: 100%;
+    z-index; -1;
+    font-size: 150pt;
+}
+
+.voteText {
+    display: block;
+    width:300px;
+    height:100px;
+    background-color: grey;
+    color: white;
+    margin:0 auto;
+}
+
+.voteSubmit {
+    position: relative;
+    left: 200pt;
+    background-color: lightgrey;
+    margin-top: 5pt;
+}
+
+.buffer {
+    height: 50pt;
+}
+
+/* Profile Page */
+
+h1#dogName {
+    font-size: 40pt;
+    text-align: center;
+    position: fixed;
+    padding-top: 32pt;
+    width: 100%;
+    color: white;
+    text-shadow: 1pt 1pt 10pt #000;
+}
+
+p.ownerName {
+    font-size: 14pt;
+    padding-left: 67pt;
+    text-align: right;
+    display: inline;
+    position: relative;
+    top: 90pt;
+    width: 100%;
+    text-shadow: 1pt 1pt 5pt #000;
+    color: white;
+}
+
+p.ownerName#owner {
+    padding-left: 0pt;
+}
+
+#profileBG {
+    position: absolute;
+    top:8%;
+    height: 84%;
+    width: 100%;
+    z-index: -3;
+}
+
+#profDog {
+    position: absolute;
+    bottom: 97pt;
+    left: 105pt;
+}
+
+p#breed {
+    font-size: 32pt;
+    text-align: center;
+    position: fixed;
+    bottom: 65pt;
+    width: 100%;
+    text-align: center;
+    left: 3pt;
+    z-index: 10;
+    text-shadow: 1pt 1pt 5pt #000;
+    color: white;
+}
+
+p#age {
+    font-size: 16pt;
+    text-align: center;
+    position: fixed;
+    bottom: 45pt;
+    width: 100%;
+    text-align: center;
+    left: 3pt;
+    z-index: 10;
+    text-shadow: 1pt 1pt 5pt #000;
+    color: white;
+}
+
+.btn#next {
+    position: absolute;
+    bottom: 40pt;
+    right: 0pt;
+    color: white;
+    text-shadow: 1pt 1pt 5pt #000;
+}
+
+.btn#previous {
+    position: absolute;
+    bottom: 40pt;
+    left: 0pt;
+    color: white;
+    text-shadow: 1pt 1pt 5pt #000;
+}
+
+/* LogIn Page */
+
+.loginBox {
+    padding: 5pt; 
+}
+
+.login {
+    display: block;
+    width: 200pt;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+.logoSpace{
+    display: block;
+    margin: 25pt;
+    padding-left: 35pt;
+    width: 80%;
+    height: 80%;
+    padding-bottom: 30pt;
+}
+
+.loginButton{
+    margin: auto;
+    padding-left: 85pt;
+    display: inline-block;
+    border: 2px;
+    border-color: darkgrey;
+    left: 80pt;
+    margin: auto;
+    font-family: "Arial";
+    text-decoration: none;
+}
+
+a#loginBtn{
+    background-color: #b8c492; 
+    color: black;
+    text-decoration: none;
+}
+
+#signinBtn{
+    background-color: #b8c492;
+    color: black;
+}
+
+/* Store Page */
+
+.storeMenu {
+    position:relative;
+    text-align:center;
+    font-size: 20pt;
+    padding-bottom: 10pt;
+}
+
+#indoor, #outdoor, #furniture, #accessories, #toys {
+    background-color: white;
+    display: inline;
+    margin: 10pt;
+}
+
+.storeContent {
+    margin-left: 20pt;
+    margin-right: 20pt;
+    padding: 15pt;
+    border-style: dashed;
+    border-width: 2pt;
+    background-color: lightgrey;
+}
+
+#topLevel, #midLevel {
+    margin-bottom: 20pt;
+}
+
+#iconTwo, #iconFour, #iconSix {
+    margin-left: 20pt;
+}
+
+#iconOne, #iconThree, #iconFive {
+    margin-left: 5pt;
+}
+
+#iconOne, #iconTwo, #iconThree, #iconFour, #iconFive, #iconSix {
+    display: inline;
+}
+
+#title1 {
+    position: absolute;
+    left: 40pt;
+}
+
+#title2 {
+    position: absolute;
+    right: 50pt;
+}
+
+#title3 {
+    position: absolute;
+    left: 40pt;
+}
+
+#title4 {
+    position: absolute;
+    right: 60pt;
+}
+
+#title5 {
+    position: absolute;
+    left: 40pt; 
+}
+
+#title6 {
+    position: absolute;
+    right: 70pt;   
+}
+
+/* Locations */
+
+.locFrame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.locationsNode {
+    padding-left: 20pt;
+    padding-right: 20pt;
+    padding-bottom: 20pt;
+    border-width: 5pt;
+}
+
+.locHeading {
+    font-style: bold;
+    background-color: lightgrey;
+}
+
+#locName {
+    text-align: center;
+    border-width: 5pt;
+    font-size: 16pt;
+}
+
+#locRating {
+    text-align: right;
+    font-size: 12pt;
+}
+
+#map {
+    border-style: solid;
+    border-width: 5pt;
+    border-color: #b8c492;
+}
+
+/* Sign Up */
+
+.signupBox {
+    padding: 5pt;
+}
+
+.signup {
+    display: block;
+    width: 200pt;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+#signupDog {
+    position: fixed;
+    left: 35%;
+    top: 150pt;
+}
+
+#signupBreed {
+    font-size: 2em;
+    position: fixed;
+    top: 250pt;
+    width: 100%;
+    text-align: center;
+}
+
+#signSubmit {
+    background-color: #b8c492; 
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px;
+    border-color: darkgrey;
+    margin: auto;
+    position: fixed;
+    top: 275pt;
+    left: 38%;
+}
+
+.btn#signPrev {
+    font-size: 2em;
+    position: fixed;
+    top: 200pt;
+    left: 50pt;
+    color: darkgrey;
+}
+
+.btn#signNext {
+    font-size: 2em;
+    position: absolute;
+    top: 200pt;
+    right: 50pt;
+    color: darkgrey;
+}
+
+/* Activity Page */
+
+.goalHeader {
+    text-align:center;
+    background-color: white;
+    margin-right: 10pt;
+}
+
+.activitySection {
+    margin: 10pt;
+}
+
+.dailyGoals, .weeklyGoals {
+    border-style: solid;
+    border-width: 1pt;
+    padding-left: 10pt;
+    padding-bottom: 0pt;
+    margin-bottom: 20pt;
+    background-color: lightgrey;
+}
+
+.progress {
+    background-color: #f3f3f3;
+    padding-left: 10pt;
+    border: 0;
+    height: 18px;
+    width: 80%;
+    border-radius: 9px;
+}

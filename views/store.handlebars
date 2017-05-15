@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<title>Store</title>
+		<link href="css/PocketPup.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="js/store.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+
+	<body>
+
+		<div class="bar top">
+			<a href="activity" id="actButton"><i class="fa fa-bar-chart"></i></a>
+			<p class="pageTitle">Store</p>
+			<a href="store" class="active top bones" id="storeButton">{{cashmonkey}} <i class="fa fa-credit-card"></i></a>
+		</div>
+
+		<div class="buffer"></div>
+
+		<div class="storeMenu">
+			<p id="indoor" onclick="indoorStore()"><i class="fa fa-home"></i></p>
+			<p id="outdoor" onclick="outdoorStore()"><i class="fa fa-tree"></i></p>
+		</div>
+
+		<div class="storeContent"> 
+			<div class="storeLevel" id="topLevel">
+				<p class="itemIcon" id="iconOne" onclick="buy1()"><img class="{{owned1}}" src="{{image1}}" height="120" width="auto"></p>
+				<p class="title" id="title1">{{title1}}  {{cost1}}</p>
+				<p class="itemIcon" id="iconTwo" onclick="buy2()"><img class="{{owned2}}" src="{{image2}}" height="120" width="auto"></p>
+				<p class="title" id="title2">{{title2}}  {{cost2}}</p>
+			</div>
+			<div class="storeLevel" id="midLevel">
+				<p class="itemIcon" id="iconThree" onclick="buy3()"><img class="{{owned3}}" src="{{image3}}" height="120" width="auto"></p>
+				<p class="title" id="title3">{{title3}}  {{cost3}}</p>
+				<p class="itemIcon" id="iconFour" onclick="buy4()"><img class="{{owned4}}" src="{{image4}}" height="120" width="auto"></p>
+				<p class="title" id="title4">{{title4}}  {{cost4}}</p>
+			</div>
+			<div class="storeLevel" id="bottomLevel">
+				<p class="itemIcon" id="iconFive" onclick="buy5()"><img class="{{owned5}}" src="{{image5}}" height="120" width="auto"></p>
+				<p class="title" id="title5">{{title5}}  {{cost5}}</p>
+				<p class="itemIcon" id="iconSix" onclick="buy6()"><img class="{{owned6}}" src="{{image6}}" height="120" width="auto"></p>
+				<p class="title" id="title6">{{title6}}  {{cost6}}</p>
+			</div>
+		</div>
+
+		<!-- <div id="arrowSpace">
+			<p id="leftArrow"><img src="images/store/left_arrow.png" width="50" height="auto"></p>
+			<p id="rightArrow"><img src="images/store/right_arrow.png" width="50" height="auto"></p>
+		</div> -->
+
+		<div class="buffer"></div>
+
+
+		<div class="bar bottom">
+ 			<a href="home"><i class="fa fa-home"></i></a> 
+  			<a href="locations"><i class="fa fa-map-marker"></i></a> 
+ 			<a href="training"><i class="fa fa-paw"></i></a> 
+		  <a href="vote"><i class="fa fa-check-square-o"></i></a>
+		</div>
+
+	</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87290080-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>

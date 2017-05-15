@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<title>Vote</title>
+
+		<link href="css/PocketPup.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+		<script src="js/jquery.js"></script>
+		<script src="js/vote.js"></script>
+		<script src="js/bootstrap.js"></script>
+ 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body style="height:100%; width:100%; overflow:auto;">
+			<div class="bar top">
+				<a href="activity" id="actButton"><i class="fa fa-bar-chart"></i></a>
+				<p class="pageTitle">Vote</p>
+			<a href="store" class="bones" id="storeButton">{{cashmonkey}} <i class="fa fa-credit-card"></i></a>
+			</div>
+
+		<div class="buffer"></div>
+
+		<div class="voteInfo">
+			<h3 id="owner">{{ownName}}'s</h3>
+			<h3 id="pet">{{dogName}}</h3>
+			<h2 id="topic">{{topicName}}</h2>
+		</div>
+
+		<div>
+			<iframe id="pupPic" src="{{image}}" frameborder="0" allowfullscreen></iframe>
+			<p class="reaction" id="thumbsUp"><i class="fa fa-thumbs-o-up"></i></p>
+			<p class="reaction" id="thumbsDown"><i class="fa fa-thumbs-o-down"></i></p>
+			<p class="reaction" id="voteReport"><i class="fa fa-warning"></i></p>
+		</div>
+	
+		<div>
+			<p class="voteButton" id="up" onclick="UpVote()"><i class="fa fa-thumbs-o-up"></i></p>
+			<p class="voteButton" id="down" onclick="DownVote()"><i class="fa fa-thumbs-o-down"></i></p>
+			<p class="voteButton" id="comment" onclick="showComment()"><i class="fa fa-commenting-o"></i></p>
+			<p class="voteButton" id="report" onclick="reportThis()"><i class="fa fa-warning"></i></p> 
+		</div>
+
+		<div>
+			<textarea class="voteText" cols="45" rows="5" onfocus="if(this.value=='Write your comment here!') this.value='';">Write your comment here!</textarea>
+			<p class="btn voteSubmit" id="submitButton" onclick="readySubmit()">Submit</p>
+		</div>
+
+		<div class="buffer"></div>
+
+		<div class="bar bottom">
+  			<a href="home"><i class="fa fa-home"></i></a> 
+  			<a href="locations"><i class="fa fa-map-marker"></i></a> 
+  			<a href="training"><i class="fa fa-paw"></i></a> 
+			<a href="vote" class="active bottom"><i class="fa fa-check-square-o"></i></a>
+		</div>
+	</body>
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87290080-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>

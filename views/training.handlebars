@@ -1,0 +1,115 @@
+<!doctype html>
+
+<html>
+
+
+  <head>
+    <title>Training</title>
+    <link href="css/PocketPup.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" >
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <style>
+      textarea#comment{
+        text-align:left;
+        margin-bottom:40pt;
+        border-color: black;
+      }
+      #trainingText {
+        background: lightgrey;
+      }
+  </style>
+
+  <script>
+      function setLesson(index) {
+        var index = parseInt(index);
+        console.log(index);
+        $.post({url: "training/setLesson", data: {"index": index}, success: reloadPage()});
+      }
+      function reloadPage() {
+        location.reload();
+      }
+  </script>
+
+  <body>
+      <div class="bar top">
+        <a href="activity" id="actButton"><i class="fa fa-bar-chart"></i></a>
+        <p class="pageTitle">Training</p>
+      </div>
+
+      <div class="buffer"></div>
+
+      <div class="dropdown" align="left">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">{{lessonNum}}. {{lessonTitle}}<span class="caret"></span></button>
+        <div class="dropdown-menu">
+          <ol>
+            <li><button class="dropdown-item" onclick="setLesson(0)">Potty Training</button></li>
+            <li><button class="dropdown-item" onclick="setLesson(1)">Sitting</button></li>
+            <li><button class="dropdown-item" onclick="setLesson(2)">Staying</button></li>
+          </ol>
+        </div>
+      </div>
+
+      <div>
+        <h1 align="center">{{lessonTitle}}</h1>
+
+        <h5 align="center" padding-left="5" padding-right="5">Getting your {{age}}-year-old {{breed}} to {{lesson}}.</h5>
+
+        <div id="trainingText">
+        <ol>
+      	   <li>{{list1}}</li>
+      	   <li>{{list2}}</li>
+           <li>{{list3}}</li>
+           <li>{{list4}}</li>
+           <li>{{list5}}</li>
+           <li>{{list6}}</li>
+           <li>{{list7}}</li>
+        </ol>
+        </div>
+
+        <h3 align="center">Video Demonstration</h3>
+
+        <div align="center">
+           <iframe width="350" height="221" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div align="center">
+          <p>Any comments?</p>
+      </div>
+
+      <div align="center">
+          <textarea rows="4" cols="35" id="comment" onfocus="if(this.value=='Write something here!') this.value='';">Write something here!</textarea>
+      </div>
+
+      <div>
+      <p class="btn voteSubmit" onclick="$('#comment').val('Write something here!');">Submit</p>
+      </div>
+
+      <div class="buffer"></div>
+
+      <div class="bar bottom">
+    		  <a href="home"><i class="fa fa-home"></i></a> 
+    		  <a href="locations"><i class="fa fa-map-marker"></i></a> 
+    		  <a href="training" class="active bottom"><i class="fa fa-paw"></i></a> 
+          <a href="vote"><i class="fa fa-check-square-o"></i></a>
+      </div>
+    </div>
+  </body>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87290080-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
