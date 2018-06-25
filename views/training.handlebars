@@ -45,51 +45,55 @@
 
       <div class="buffer"></div>
 
-      <div class="dropdown" align="left">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">{{lessonNum}}. {{lessonTitle}}<span class="caret"></span></button>
-        <div class="dropdown-menu">
+      <div class="section">
+
+        <div class="dropdown" align="left">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">{{lessonNum}}. {{lessonTitle}}<span class="caret"></span></button>
+          <div class="dropdown-menu">
+            <ol>
+              <li><button class="dropdown-item" onclick="setLesson(0)">Potty Training</button></li>
+              <li><button class="dropdown-item" onclick="setLesson(1)">Sitting</button></li>
+              <li><button class="dropdown-item" onclick="setLesson(2)">Staying</button></li>
+            </ol>
+          </div>
+        </div>
+
+        <div>
+          <h1 align="center">{{lessonTitle}}</h1>
+
+          <h5 align="center" padding-left="5" padding-right="5">Getting your {{age}}-year-old {{breed}} to {{lesson}}.</h5>
+
+          <div id="trainingText">
           <ol>
-            <li><button class="dropdown-item" onclick="setLesson(0)">Potty Training</button></li>
-            <li><button class="dropdown-item" onclick="setLesson(1)">Sitting</button></li>
-            <li><button class="dropdown-item" onclick="setLesson(2)">Staying</button></li>
+        	   <li>{{list1}}</li>
+        	   <li>{{list2}}</li>
+             <li>{{list3}}</li>
+             <li>{{list4}}</li>
+             <li>{{list5}}</li>
+             <li>{{list6}}</li>
+             <li>{{list7}}</li>
           </ol>
+          </div>
+
+          <h3 align="center">Video Demonstration</h3>
+
+          <div align="center">
+             <iframe width="350" height="221" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
-      </div>
-
-      <div>
-        <h1 align="center">{{lessonTitle}}</h1>
-
-        <h5 align="center" padding-left="5" padding-right="5">Getting your {{age}}-year-old {{breed}} to {{lesson}}.</h5>
-
-        <div id="trainingText">
-        <ol>
-      	   <li>{{list1}}</li>
-      	   <li>{{list2}}</li>
-           <li>{{list3}}</li>
-           <li>{{list4}}</li>
-           <li>{{list5}}</li>
-           <li>{{list6}}</li>
-           <li>{{list7}}</li>
-        </ol>
-        </div>
-
-        <h3 align="center">Video Demonstration</h3>
 
         <div align="center">
-           <iframe width="350" height="221" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+            <p>Any comments?</p>
         </div>
-      </div>
 
-      <div align="center">
-          <p>Any comments?</p>
-      </div>
+        <div align="center">
+            <textarea rows="4" cols="35" id="comment" onfocus="if(this.value=='Write something here!') this.value='';">Write something here!</textarea>
+        </div>
 
-      <div align="center">
-          <textarea rows="4" cols="35" id="comment" onfocus="if(this.value=='Write something here!') this.value='';">Write something here!</textarea>
-      </div>
+        <div>
+        <p class="btn voteSubmit" onclick="$('#comment').val('Write something here!');">Submit</p>
+        </div>
 
-      <div>
-      <p class="btn voteSubmit" onclick="$('#comment').val('Write something here!');">Submit</p>
       </div>
 
       <div class="buffer"></div>

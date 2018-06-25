@@ -26,29 +26,33 @@
 
 		<div class="buffer"></div>
 
-		<div class="voteInfo">
-			<h3 id="owner">{{ownName}}'s</h3>
-			<h3 id="pet">{{dogName}}</h3>
-			<h2 id="topic">{{topicName}}</h2>
-		</div>
+		<div class="section">
 
-		<div>
-			<iframe id="pupPic" src="{{image}}" frameborder="0" allowfullscreen></iframe>
-			<p class="reaction" id="thumbsUp"><i class="fa fa-thumbs-o-up"></i></p>
-			<p class="reaction" id="thumbsDown"><i class="fa fa-thumbs-o-down"></i></p>
-			<p class="reaction" id="voteReport"><i class="fa fa-warning"></i></p>
-		</div>
-	
-		<div>
-			<p class="voteButton" id="up" onclick="UpVote()"><i class="fa fa-thumbs-o-up"></i></p>
-			<p class="voteButton" id="down" onclick="DownVote()"><i class="fa fa-thumbs-o-down"></i></p>
-			<p class="voteButton" id="comment" onclick="showComment()"><i class="fa fa-commenting-o"></i></p>
-			<p class="voteButton" id="report" onclick="reportThis()"><i class="fa fa-warning"></i></p> 
-		</div>
+			<div class="voteInfo">
+				<h3 id="owner">{{ownName}}'s</h3>
+				<h3 id="pet">{{dogName}}</h3>
+				<h2 id="topic">{{topicName}}</h2>
+			</div>
 
-		<div>
-			<textarea class="voteText" cols="45" rows="5" onfocus="if(this.value=='Write your comment here!') this.value='';">Write your comment here!</textarea>
-			<p class="btn voteSubmit" id="submitButton" onclick="readySubmit()">Submit</p>
+			<div>
+				<iframe id="pupPic" src="{{image}}" frameborder="0" allowfullscreen></iframe>
+				<p class="reaction" id="thumbsUp"><i class="fa fa-thumbs-o-up"></i></p>
+				<p class="reaction" id="thumbsDown"><i class="fa fa-thumbs-o-down"></i></p>
+				<p class="reaction" id="voteReport"><i class="fa fa-warning"></i></p>
+			</div>
+		
+			<div>
+				<p class="voteButton" id="up" onclick="UpVote()"><i class="fa fa-thumbs-o-up"></i></p>
+				<p class="voteButton" id="down" onclick="DownVote()"><i class="fa fa-thumbs-o-down"></i></p>
+				<p class="voteButton" id="comment" onclick="showComment()"><i class="fa fa-commenting-o"></i></p>
+				<p class="voteButton" id="report" onclick="reportThis()"><i class="fa fa-warning"></i></p> 
+			</div>
+
+			<div>
+				<textarea class="voteText" cols="45" rows="5" onfocus="if(this.value=='Write your comment here!') this.value='';">Write your comment here!</textarea>
+				<p class="btn voteSubmit" id="submitButton" onclick="readySubmit()">Submit</p>
+			</div>
+
 		</div>
 
 		<div class="buffer"></div>
