@@ -67,24 +67,22 @@ body {
 }
 
 #actButton {
-	position: fixed;
-	left: 374px;
+	position: relative;
+	left: -3%;
     width: 10%;
     height: 8%;
     transition: all 0.3s ease;
     color: #737373;
     font-size: 16pt;
-    padding-top: 8pt;
-    padding-bottom: 8pt
+    padding: 8px 16px;
 }
 
 #storeButton {
-	position: fixed;
-	right: 375px;
+	position: relative;
+	right: -16px;
     width: 10%;
     height: 8%;
-    padding-top: 8pt;
-    padding-bottom:5pt;
+    padding: 8px 16px;
     transition: all 0.3s ease;
     color: #737373;
     font-size: 16pt;
